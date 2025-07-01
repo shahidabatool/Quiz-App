@@ -1,0 +1,665 @@
+{
+    "bookTitle": "Discover Canada",
+    "chapters": [
+        {
+            "title": "Applying for Citizenship",
+            "questions": [
+                {
+                    "question": "What are the two basic requirements tested in the citizenship test?",
+                    "options": [
+                        "Knowledge of Canada and language skills in English or French",
+                        "Canadian history and geography only",
+                        "Language skills and physical presence in Canada",
+                        "Knowledge of laws and Canadian symbols only"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "The citizenship test examines: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French."
+                },
+                {
+                    "question": "What happens at the citizenship ceremony?",
+                    "options": [
+                        "Only receive the citizenship certificate",
+                        "Take the Oath of Citizenship, sign the oath form, and receive the Canadian Citizenship Certificate",
+                        "Just sign some paperwork",
+                        "Only take a written test"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "At the ceremony, you will take the Oath of Citizenship, sign the oath form, and receive your Canadian Citizenship Certificate."
+                },
+                {
+                    "question": "What age group does NOT need to write the citizenship test?",
+                    "options": [
+                        "18-24 years old",
+                        "25-54 years old",
+                        "Adult applicants 55 years of age and over",
+                        "All adults must take the test"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Adult applicants 55 years of age and over do not need to write the citizenship test."
+                },
+                {
+                    "question": "Which document tells you the date, time, and place of your citizenship ceremony?",
+                    "options": [
+                        "Notice to Appear to Take the Oath of Citizenship",
+                        "Canadian Citizenship Certificate",
+                        "Test Results Letter",
+                        "Immigration Confirmation"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "If you pass the test and meet all requirements, you will receive a Notice to Appear to Take the Oath of Citizenship."
+                },
+                {
+                    "question": "What type of test is the citizenship test usually?",
+                    "options": [
+                        "Always an oral interview",
+                        "Always a practical test",
+                        "Usually a written test, but could be an interview",
+                        "Always multiple choice online"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "The citizenship test is usually a written test, but it could be an interview."
+                }
+            ]
+        },
+        {
+            "title": "Rights and Responsibilities of Citizenship",
+            "questions": [
+                {
+                    "question": "What is Canada's position on gender equality?",
+                    "options": [
+                        "Men have more rights than women",
+                        "Women have more rights than men",
+                        "Men and women are equal under the law",
+                        "Gender equality varies by province"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "In Canada, men and women are equal under the law."
+                },
+                {
+                    "question": "Canada's openness does NOT extend to which practices?",
+                    "options": [
+                        "Religious freedom",
+                        "Cultural celebrations",
+                        "Barbaric cultural practices like honour killings",
+                        "Speaking different languages"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Canada's openness does not extend to barbaric cultural practices that tolerate spousal abuse, honour killings, female genital mutilation, or forced marriage."
+                },
+                {
+                    "question": "What are the sources of Canadian law?",
+                    "options": [
+                        "Only federal laws",
+                        "Laws passed by Parliament and provincial legislatures, English common law, French civil code, and unwritten constitution",
+                        "Only the Charter of Rights and Freedoms",
+                        "Only provincial laws"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canadian law has several sources including laws passed by Parliament and provincial legislatures, English common law, the civil code of France, and the unwritten constitution inherited from Great Britain."
+                },
+                {
+                    "question": "When was the Canadian Charter of Rights and Freedoms entrenched in the Constitution?",
+                    "options": [
+                        "1980",
+                        "1982",
+                        "1985",
+                        "1990"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The Constitution of Canada was amended in 1982 to entrench the Canadian Charter of Rights and Freedoms."
+                },
+                {
+                    "question": "What right comes from English common law?",
+                    "options": [
+                        "Freedom of speech",
+                        "Habeas corpus",
+                        "Right to vote",
+                        "Freedom of religion"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Habeas corpus, the right to challenge unlawful detention by the state, comes from English common law."
+                }
+            ]
+        },
+        {
+            "title": "Who We Are",
+            "questions": [
+                {
+                    "question": "What type of government system does Canada have?",
+                    "options": [
+                        "A republic",
+                        "A direct democracy",
+                        "A constitutional monarchy, parliamentary democracy and federal state",
+                        "A presidential system"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Canada is a constitutional monarchy, a parliamentary democracy and a federal state."
+                },
+                {
+                    "question": "How long have settlers and immigrants been contributing to Canada's diversity?",
+                    "options": [
+                        "200 years",
+                        "300 years",
+                        "400 years",
+                        "500 years"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "For 400 years, settlers and immigrants have contributed to the diversity and richness of our country."
+                },
+                {
+                    "question": "What binds Canadians together?",
+                    "options": [
+                        "Only shared geography",
+                        "Only common language",
+                        "A shared commitment to the rule of law and parliamentary government",
+                        "Only economic interests"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Canadians are bound together by a shared commitment to the rule of law and to the institutions of parliamentary government."
+                },
+                {
+                    "question": "In Canada's constitutional monarchy, to whom do citizens profess their loyalty?",
+                    "options": [
+                        "To the Constitution only",
+                        "To the flag only",
+                        "To the Prime Minister",
+                        "To the Sovereign (Queen or King) who represents all Canadians"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "In Canada, we profess our loyalty to a person who represents all Canadians (the Sovereign) and not to a document, banner, or geopolitical entity."
+                },
+                {
+                    "question": "What is Canada built on?",
+                    "options": [
+                        "Economic prosperity only",
+                        "A proud history and strong identity",
+                        "Geographic advantages",
+                        "Natural resources"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada is built on a proud history and a strong identity, contributed to by generations of settlers and immigrants."
+                }
+            ]
+        },
+        {
+            "title": "Canada's History",
+            "questions": [
+                {
+                    "question": "Who were the first people to live in Canada?",
+                    "options": [
+                        "French explorers",
+                        "British settlers",
+                        "Aboriginal peoples (First Nations, Inuit, and Métis)",
+                        "Viking explorers"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Aboriginal peoples were the first people to live in Canada, including First Nations, Inuit, and Métis peoples."
+                },
+                {
+                    "question": "What year did Confederation occur?",
+                    "options": [
+                        "1865",
+                        "1867",
+                        "1870",
+                        "1871"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canadian Confederation occurred on July 1, 1867, when four provinces united to form the Dominion of Canada."
+                },
+                {
+                    "question": "Which explorer is credited with the European discovery of Canada?",
+                    "options": [
+                        "Christopher Columbus",
+                        "Jacques Cartier",
+                        "Samuel de Champlain",
+                        "John Cabot"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "John Cabot was the first European to explore Canada's Atlantic coast in 1497."
+                },
+                {
+                    "question": "What was the significance of the Plains of Abraham battle?",
+                    "options": [
+                        "It established Canadian independence",
+                        "It decided control of North America between Britain and France",
+                        "It ended the War of 1812",
+                        "It created Confederation"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The Battle of the Plains of Abraham in 1759 decided the fate of North America, with Britain defeating France."
+                },
+                {
+                    "question": "What was the Underground Railroad?",
+                    "options": [
+                        "A subway system",
+                        "A mining operation",
+                        "A network that helped enslaved people escape to freedom in Canada",
+                        "A transportation system for goods"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "The Underground Railroad was a network of secret routes and safe houses used to help enslaved African Americans escape to freedom in Canada."
+                }
+            ]
+        },
+        {
+            "title": "Modern Canada",
+            "questions": [
+                {
+                    "question": "When did Canada become a fully sovereign country?",
+                    "options": [
+                        "1867",
+                        "1931",
+                        "1949",
+                        "1982"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada became fully sovereign in 1931 with the Statute of Westminster."
+                },
+                {
+                    "question": "What significant constitutional change occurred in 1982?",
+                    "options": [
+                        "Canada joined NATO",
+                        "The Charter of Rights and Freedoms was entrenched",
+                        "Quebec became a province",
+                        "Universal healthcare was established"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "In 1982, the Constitution was patriated and the Charter of Rights and Freedoms was entrenched."
+                },
+                {
+                    "question": "What is Canada's role in international peacekeeping?",
+                    "options": [
+                        "Canada avoids international conflicts",
+                        "Canada has been a leader in peacekeeping since the 1950s",
+                        "Canada only participates in North American conflicts",
+                        "Canada joined peacekeeping in the 1990s"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada has been a leader in international peacekeeping since the 1950s, with Lester Pearson winning the Nobel Peace Prize for his peacekeeping efforts."
+                },
+                {
+                    "question": "When did Newfoundland and Labrador join Canada?",
+                    "options": [
+                        "1867",
+                        "1905",
+                        "1949",
+                        "1999"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Newfoundland and Labrador joined Canada as the 10th province in 1949."
+                },
+                {
+                    "question": "What major infrastructure project connected Canada from coast to coast?",
+                    "options": [
+                        "The Trans-Canada Highway",
+                        "The Canadian Pacific Railway",
+                        "The St. Lawrence Seaway",
+                        "The Confederation Bridge"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The Canadian Pacific Railway, completed in 1885, connected Canada from coast to coast and was crucial for Confederation."
+                }
+            ]
+        },
+        {
+            "title": "How Canadians Govern Themselves",
+            "questions": [
+                {
+                    "question": "Who is Canada's Head of State?",
+                    "options": [
+                        "The Prime Minister",
+                        "The Governor General",
+                        "The Sovereign (King or Queen)",
+                        "The Chief Justice"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "The Sovereign (currently King Charles III) is Canada's Head of State."
+                },
+                {
+                    "question": "Who represents the Sovereign in Canada?",
+                    "options": [
+                        "The Prime Minister",
+                        "The Governor General",
+                        "The Chief Justice",
+                        "The Speaker of the House"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The Governor General represents the Sovereign in Canada and carries out constitutional duties."
+                },
+                {
+                    "question": "How many levels of government are there in Canada?",
+                    "options": [
+                        "Two",
+                        "Three",
+                        "Four",
+                        "Five"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada has three levels of government: federal, provincial/territorial, and municipal."
+                },
+                {
+                    "question": "What is the upper house of Parliament called?",
+                    "options": [
+                        "House of Commons",
+                        "Senate",
+                        "Legislative Assembly",
+                        "Cabinet"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The Senate is the upper house of Parliament, with the House of Commons being the lower house."
+                },
+                {
+                    "question": "How are Senators chosen?",
+                    "options": [
+                        "Elected by the people",
+                        "Appointed by the Prime Minister",
+                        "Appointed by the Governor General on advice of the Prime Minister",
+                        "Inherited positions"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Senators are appointed by the Governor General on the advice of the Prime Minister."
+                }
+            ]
+        },
+        {
+            "title": "Federal Elections",
+            "questions": [
+                {
+                    "question": "How often must federal elections be held in Canada?",
+                    "options": [
+                        "Every 3 years",
+                        "Every 4 years",
+                        "At least every 5 years",
+                        "Every 6 years"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Federal elections must be held at least every five years, though they can be called earlier."
+                },
+                {
+                    "question": "Who can vote in federal elections?",
+                    "options": [
+                        "All residents 18 and over",
+                        "Canadian citizens 18 and over",
+                        "All adults with a job",
+                        "Property owners only"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canadian citizens who are 18 years of age or older can vote in federal elections."
+                },
+                {
+                    "question": "What is the voting system used in federal elections?",
+                    "options": [
+                        "Proportional representation",
+                        "First-past-the-post",
+                        "Ranked ballot",
+                        "Two-round system"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada uses the first-past-the-post electoral system in federal elections."
+                },
+                {
+                    "question": "How many electoral districts (ridings) are there in Canada?",
+                    "options": [
+                        "308",
+                        "338",
+                        "350",
+                        "365"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "There are 338 electoral districts (ridings) in Canada."
+                },
+                {
+                    "question": "What do you need to bring to vote?",
+                    "options": [
+                        "Nothing, just your name",
+                        "Proof of identity",
+                        "Proof of identity and address",
+                        "Birth certificate only"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "To vote, you need to prove your identity and address."
+                }
+            ]
+        },
+        {
+            "title": "The Justice System",
+            "questions": [
+                {
+                    "question": "What principle is Canada's justice system based on?",
+                    "options": [
+                        "Guilty until proven innocent",
+                        "Innocent until proven guilty",
+                        "Judge decides guilt",
+                        "Community decides guilt"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada's justice system is based on the principle that everyone is innocent until proven guilty."
+                },
+                {
+                    "question": "What are the two main types of law in Canada?",
+                    "options": [
+                        "Federal and provincial law",
+                        "Criminal and civil law",
+                        "Common and civil law",
+                        "Public and private law"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The two main types of law in Canada are criminal law and civil law."
+                },
+                {
+                    "question": "Who appoints federal judges?",
+                    "options": [
+                        "The Governor General",
+                        "The federal government",
+                        "Provincial governments",
+                        "The Supreme Court"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Federal judges are appointed by the federal government."
+                },
+                {
+                    "question": "What is the highest court in Canada?",
+                    "options": [
+                        "Federal Court",
+                        "Court of Appeal",
+                        "Supreme Court of Canada",
+                        "Provincial Superior Court"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "The Supreme Court of Canada is the highest court in the country."
+                },
+                {
+                    "question": "What right do you have if arrested?",
+                    "options": [
+                        "Right to remain silent only",
+                        "Right to a lawyer only",
+                        "Right to remain silent and right to a lawyer",
+                        "No specific rights"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "If arrested, you have the right to remain silent and the right to speak to a lawyer."
+                }
+            ]
+        },
+        {
+            "title": "Canadian Symbols",
+            "questions": [
+                {
+                    "question": "What is Canada's national symbol?",
+                    "options": [
+                        "The beaver",
+                        "The maple leaf",
+                        "The loon",
+                        "The moose"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The maple leaf is Canada's most recognizable national symbol."
+                },
+                {
+                    "question": "What are Canada's official colors?",
+                    "options": [
+                        "Red and blue",
+                        "Red and white",
+                        "Blue and white",
+                        "Green and white"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Red and white are Canada's official national colors."
+                },
+                {
+                    "question": "When was the current Canadian flag adopted?",
+                    "options": [
+                        "1964",
+                        "1965",
+                        "1967",
+                        "1970"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "The current Canadian flag was adopted on February 15, 1965."
+                },
+                {
+                    "question": "What is the motto of Canada?",
+                    "options": [
+                        "Peace, Order and Good Government",
+                        "A Mari Usque Ad Mare",
+                        "Je me souviens",
+                        "Unity in Diversity"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada's motto is 'A Mari Usque Ad Mare' which means 'From Sea to Sea'."
+                },
+                {
+                    "question": "What flower is the floral emblem of Canada?",
+                    "options": [
+                        "Rose",
+                        "Lily",
+                        "Trillium",
+                        "No official floral emblem"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Canada does not have an official national floral emblem, though provinces have their own."
+                }
+            ]
+        },
+        {
+            "title": "Canada's Economy",
+            "questions": [
+                {
+                    "question": "What type of economic system does Canada have?",
+                    "options": [
+                        "Socialist economy",
+                        "Mixed economy (market and government)",
+                        "Pure market economy",
+                        "Command economy"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada has a mixed economy that combines free market principles with government regulation and services."
+                },
+                {
+                    "question": "What are Canada's main industries?",
+                    "options": [
+                        "Only manufacturing",
+                        "Natural resources, manufacturing, and services",
+                        "Only agriculture",
+                        "Only technology"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada's economy is based on natural resources, manufacturing, and services."
+                },
+                {
+                    "question": "What is Canada's currency?",
+                    "options": [
+                        "Canadian peso",
+                        "Canadian pound",
+                        "Canadian dollar",
+                        "Canadian franc"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Canada's currency is the Canadian dollar."
+                },
+                {
+                    "question": "Which trade agreement includes Canada, the US, and Mexico?",
+                    "options": [
+                        "NAFTA",
+                        "USMCA (CUSMA)",
+                        "Both NAFTA (now replaced by USMCA/CUSMA)",
+                        "CETA"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "The current trade agreement is USMCA (or CUSMA in Canada), which replaced NAFTA."
+                },
+                {
+                    "question": "What natural resource has been historically important to Canada's economy?",
+                    "options": [
+                        "Gold only",
+                        "Oil only",
+                        "Forests, minerals, and energy resources",
+                        "Diamonds only"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Canada's economy has been built on abundant natural resources including forests, minerals, and energy."
+                }
+            ]
+        },
+        {
+            "title": "Canada's Regions",
+            "questions": [
+                {
+                    "question": "How many provinces does Canada have?",
+                    "options": [
+                        "9",
+                        "10",
+                        "11",
+                        "12"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada has 10 provinces and 3 territories."
+                },
+                {
+                    "question": "How many territories does Canada have?",
+                    "options": [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Canada has 3 territories: Northwest Territories, Nunavut, and Yukon."
+                },
+                {
+                    "question": "Which is Canada's largest province by area?",
+                    "options": [
+                        "Ontario",
+                        "British Columbia",
+                        "Quebec",
+                        "Alberta"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Quebec is Canada's largest province by area."
+                },
+                {
+                    "question": "Which province has the largest population?",
+                    "options": [
+                        "Quebec",
+                        "British Columbia",
+                        "Ontario",
+                        "Alberta"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Ontario has the largest population of any Canadian province."
+                },
+                {
+                    "question": "What are the Maritime provinces?",
+                    "options": [
+                        "Nova Scotia, New Brunswick, Prince Edward Island",
+                        "All Atlantic provinces",
+                        "Only Nova Scotia and New Brunswick",
+                        "All eastern provinces"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "The Maritime provinces are Nova Scotia, New Brunswick, and Prince Edward Island."
+                }
+            ]
+        }
+    ]
+}

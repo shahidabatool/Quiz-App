@@ -1,0 +1,95 @@
+{
+    "bookTitle":  "Discover Canada",
+    "chapters":  [
+        {
+            "title": "Applying for Citizenship",
+            "questions": [
+                {
+                    "question": "What are the two basic requirements tested in the citizenship test?",
+                    "options": [
+                        "Knowledge of Canada and language skills in English or French",
+                        "Canadian history and geography only",
+                        "Language skills and physical presence in Canada",
+                        "Knowledge of laws and Canadian symbols only"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "The citizenship test examines: 1) knowledge of Canada and of the rights and responsibilities of citizenship, and 2) adequate knowledge of English or French."
+                },
+                {
+                    "question": "What happens at the citizenship ceremony?",
+                    "options": [
+                        "Only receive the citizenship certificate",
+                        "Take the Oath of Citizenship, sign the oath form, and receive the Canadian Citizenship Certificate",
+                        "Just sign some paperwork",
+                        "Only take a written test"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "At the ceremony, you will take the Oath of Citizenship, sign the oath form, and receive your Canadian Citizenship Certificate."
+                },
+                {
+                    "question": "What age group does NOT need to write the citizenship test?",
+                    "options": [
+                        "18-24 years old",
+                        "25-54 years old",
+                        "Adult applicants 55 years of age and over",
+                        "All adults must take the test"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Adult applicants 55 years of age and over do not need to write the citizenship test."
+                }
+            ]
+        },
+        {
+            "title": "Rights and Responsibilities of Citizenship",
+            "questions": [
+                {
+                    "question": "What is Canada's position on gender equality?",
+                    "options": [
+                        "Men have more rights than women",
+                        "Women have more rights than men",
+                        "Men and women are equal under the law",
+                        "Gender equality varies by province"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "In Canada, men and women are equal under the law."
+                }
+            ]
+        },
+        {
+            "title": "Who We Are",
+            "questions": []
+        },
+        {
+            "title": "Canada's History",
+            "questions": []
+        },
+        {
+            "title": "Modern Canada",
+            "questions": []
+        },
+        {
+            "title": "How Canadians Govern Themselves",
+            "questions": []
+        },
+        {
+            "title": "Federal Elections",
+            "questions": []
+        },
+        {
+            "title": "The Justice System",
+            "questions": []
+        },
+        {
+            "title": "Canadian Symbols",
+            "questions": []
+        },
+        {
+            "title": "Canada's Economy",
+            "questions": []
+        },
+        {
+            "title": "Canada's Regions",
+            "questions": []
+        }
+    ]
+}

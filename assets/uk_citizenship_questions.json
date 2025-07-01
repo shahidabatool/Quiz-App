@@ -1,0 +1,142 @@
+[
+  {
+    "bookTitle": "Life in the UK Test",
+    "chapters": [
+      {
+        "chapterName": "The Values and Principles of the UK",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the fundamental principle of British democracy?",
+            "options": [
+              "Parliamentary sovereignty",
+              "Royal authority",
+              "Local government control",
+              "European Union law"
+            ],
+            "correct_answer": "Parliamentary sovereignty"
+          },
+          {
+            "id": 2,
+            "question": "Which document established the principle of rule of law in England?",
+            "options": [
+              "The Magna Carta",
+              "The Bill of Rights",
+              "The Human Rights Act",
+              "The European Convention"
+            ],
+            "correct_answer": "The Magna Carta"
+          }
+        ]
+      },
+      {
+        "chapterName": "What is the UK?",
+        "questions": [
+          {
+            "id": 3,
+            "question": "Which nations make up the United Kingdom?",
+            "options": [
+              "England, Wales, Scotland, and Northern Ireland",
+              "England, Wales, and Scotland only",
+              "Great Britain and Ireland",
+              "England and Scotland only"
+            ],
+            "correct_answer": "England, Wales, Scotland, and Northern Ireland"
+          },
+          {
+            "id": 4,
+            "question": "When was the Act of Union between England and Scotland signed?",
+            "options": [
+              "1707",
+              "1800",
+              "1922",
+              "1066"
+            ],
+            "correct_answer": "1707"
+          }
+        ]
+      },
+      {
+        "chapterName": "A Long and Illustrious History",
+        "questions": [
+          {
+            "id": 5,
+            "question": "Who was the first Tudor monarch?",
+            "options": [
+              "Henry VII",
+              "Henry VIII",
+              "Elizabeth I",
+              "Mary I"
+            ],
+            "correct_answer": "Henry VII"
+          },
+          {
+            "id": 6,
+            "question": "What was the main cause of the English Civil War?",
+            "options": [
+              "Conflict between Parliament and the Crown",
+              "Religious differences",
+              "Foreign invasion",
+              "Economic crisis"
+            ],
+            "correct_answer": "Conflict between Parliament and the Crown"
+          }
+        ]
+      },
+      {
+        "chapterName": "Modern, Thriving Society",
+        "questions": [
+          {
+            "id": 7,
+            "question": "What is the UK's official religion?",
+            "options": [
+              "Church of England",
+              "Roman Catholic Church",
+              "Presbyterian Church",
+              "No official religion"
+            ],
+            "correct_answer": "Church of England"
+          },
+          {
+            "id": 8,
+            "question": "Which of these is a fundamental British value?",
+            "options": [
+              "Individual liberty",
+              "Conformity",
+              "State control",
+              "Religious uniformity"
+            ],
+            "correct_answer": "Individual liberty"
+          }
+        ]
+      },
+      {
+        "chapterName": "The UK Government",
+        "questions": [
+          {
+            "id": 9,
+            "question": "How often must a general election be held in the UK?",
+            "options": [
+              "At least every 5 years",
+              "At least every 4 years",
+              "At least every 3 years",
+              "At least every 7 years"
+            ],
+            "correct_answer": "At least every 5 years"
+          },
+          {
+            "id": 10,
+            "question": "What is the role of the House of Lords?",
+            "options": [
+              "To examine and challenge the work of the government",
+              "To represent local constituencies",
+              "To form the government",
+              "To collect taxes"
+            ],
+            "correct_answer": "To examine and challenge the work of the government"
+          }
+        ]
+      }
+    ]
+  }
+] 

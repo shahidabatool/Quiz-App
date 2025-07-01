@@ -1,0 +1,632 @@
+[
+  {
+    "bookTitle": "Life in the UK Test",
+    "chapters": [
+      {
+        "chapterName": "The Values and Principles of the UK",
+        "questions": [
+          {
+            "id": 1,
+            "question": "What is the fundamental principle of British democracy?",
+            "options": [
+              "Parliamentary sovereignty",
+              "Royal authority",
+              "Local government control",
+              "European Union law"
+            ],
+            "correct_answer": "Parliamentary sovereignty",
+            "explanation": "Parliamentary sovereignty is the fundamental principle of British democracy, meaning Parliament has the ultimate authority to make and change laws."
+          },
+          {
+            "id": 2,
+            "question": "Which document established the principle of rule of law in England?",
+            "options": [
+              "The Magna Carta",
+              "The Bill of Rights",
+              "The Human Rights Act",
+              "The European Convention"
+            ],
+            "correct_answer": "The Magna Carta",
+            "explanation": "The Magna Carta, signed in 1215, established the principle of rule of law and limited the power of the monarch."
+          },
+          {
+            "id": 3,
+            "question": "What are the fundamental British values?",
+            "options": [
+              "Democracy, rule of law, individual liberty, mutual respect",
+              "Monarchy, aristocracy, democracy, republic",
+              "Socialism, capitalism, communism, democracy",
+              "Religion, politics, economics, culture"
+            ],
+            "correct_answer": "Democracy, rule of law, individual liberty, mutual respect",
+            "explanation": "The fundamental British values are democracy, the rule of law, individual liberty, and mutual respect and tolerance of those with different faiths and beliefs."
+          },
+          {
+            "id": 4,
+            "question": "What is the role of the monarch in the UK today?",
+            "options": [
+              "To make laws",
+              "To govern the country",
+              "To be a ceremonial head of state",
+              "To control the military"
+            ],
+            "correct_answer": "To be a ceremonial head of state",
+            "explanation": "The monarch is the ceremonial head of state and represents the UK at home and abroad."
+          },
+          {
+            "id": 5,
+            "question": "What is meant by 'individual liberty' in British values?",
+            "options": [
+              "Freedom to break the law",
+              "Freedom within the law",
+              "Freedom from all rules",
+              "Freedom to ignore others"
+            ],
+            "correct_answer": "Freedom within the law",
+            "explanation": "Individual liberty means freedom within the law, where people can live their lives as they wish, provided they do not break the law."
+          },
+          {
+            "id": 26,
+            "question": "What is the highest mountain in the UK?",
+            "options": [
+              "Ben Nevis",
+              "Snowdon",
+              "Scafell Pike",
+              "Ben Macdui"
+            ],
+            "correct_answer": "Ben Nevis",
+            "explanation": "Ben Nevis in Scotland is the highest mountain in the UK at 1,345 metres."
+          },
+          {
+            "id": 27,
+            "question": "What is the longest river in the UK?",
+            "options": [
+              "River Thames",
+              "River Severn",
+              "River Trent",
+              "River Clyde"
+            ],
+            "correct_answer": "River Severn",
+            "explanation": "The River Severn is the longest river in the UK at 354 kilometres."
+          },
+          {
+            "id": 28,
+            "question": "What is the largest lake in the UK?",
+            "options": [
+              "Loch Ness",
+              "Loch Lomond",
+              "Windermere",
+              "Lough Neagh"
+            ],
+            "correct_answer": "Lough Neagh",
+            "explanation": "Lough Neagh in Northern Ireland is the largest lake in the UK."
+          },
+          {
+            "id": 29,
+            "question": "What is the capital of England?",
+            "options": [
+              "Manchester",
+              "Birmingham",
+              "London",
+              "Liverpool"
+            ],
+            "correct_answer": "London",
+            "explanation": "London is the capital city of England and the UK."
+          },
+          {
+            "id": 30,
+            "question": "What is the national flower of England?",
+            "options": [
+              "Rose",
+              "Daffodil",
+              "Thistle",
+              "Shamrock"
+            ],
+            "correct_answer": "Rose",
+            "explanation": "The rose is the national flower of England."
+          },
+          {
+            "id": 31,
+            "question": "What is the national dish of England?",
+            "options": [
+              "Fish and chips",
+              "Roast beef",
+              "Shepherd's pie",
+              "Bangers and mash"
+            ],
+            "correct_answer": "Fish and chips",
+            "explanation": "Fish and chips is considered the national dish of England."
+          },
+          {
+            "id": 32,
+            "question": "When is St. Patrick's Day celebrated?",
+            "options": [
+              "17 March",
+              "23 April",
+              "30 November",
+              "25 December"
+            ],
+            "correct_answer": "17 March",
+            "explanation": "St. Patrick's Day is celebrated on 17 March, the feast day of St. Patrick."
+          },
+          {
+            "id": 33,
+            "question": "What is the national animal of Scotland?",
+            "options": [
+              "Lion",
+              "Unicorn",
+              "Eagle",
+              "Deer"
+            ],
+            "correct_answer": "Unicorn",
+            "explanation": "The unicorn is the national animal of Scotland."
+          },
+          {
+            "id": 34,
+            "question": "What is the national flower of Wales?",
+            "options": [
+              "Daffodil",
+              "Rose",
+              "Thistle",
+              "Shamrock"
+            ],
+            "correct_answer": "Daffodil",
+            "explanation": "The daffodil is the national flower of Wales."
+          },
+          {
+            "id": 35,
+            "question": "What is the national flower of Scotland?",
+            "options": [
+              "Thistle",
+              "Rose",
+              "Daffodil",
+              "Shamrock"
+            ],
+            "correct_answer": "Thistle",
+            "explanation": "The thistle is the national flower of Scotland."
+          },
+          {
+            "id": 36,
+            "question": "What is the national sport of England?",
+            "options": [
+              "Football",
+              "Cricket",
+              "Rugby",
+              "Tennis"
+            ],
+            "correct_answer": "Cricket",
+            "explanation": "Cricket is considered the national sport of England."
+          },
+          {
+            "id": 37,
+            "question": "Where is the Wimbledon tennis tournament held?",
+            "options": [
+              "London",
+              "Manchester",
+              "Birmingham",
+              "Liverpool"
+            ],
+            "correct_answer": "London",
+            "explanation": "The Wimbledon tennis tournament is held in London."
+          },
+          {
+            "id": 38,
+            "question": "What is the oldest football club in the world?",
+            "options": [
+              "Manchester United",
+              "Liverpool",
+              "Sheffield FC",
+              "Arsenal"
+            ],
+            "correct_answer": "Sheffield FC",
+            "explanation": "Sheffield FC, founded in 1857, is the oldest football club in the world."
+          },
+          {
+            "id": 39,
+            "question": "What is the national sport of Scotland?",
+            "options": [
+              "Football",
+              "Golf",
+              "Rugby",
+              "Cricket"
+            ],
+            "correct_answer": "Golf",
+            "explanation": "Golf is considered the national sport of Scotland."
+          },
+          {
+            "id": 40,
+            "question": "Where is the home of golf?",
+            "options": [
+              "St Andrews",
+              "Glasgow",
+              "Edinburgh",
+              "Aberdeen"
+            ],
+            "correct_answer": "St Andrews",
+            "explanation": "St Andrews in Scotland is known as the home of golf."
+          },
+          {
+            "id": 41,
+            "question": "At what age do children start primary school in the UK?",
+            "options": [
+              "4 years",
+              "5 years",
+              "6 years",
+              "7 years"
+            ],
+            "correct_answer": "5 years",
+            "explanation": "Children in the UK start primary school at the age of 5."
+          },
+          {
+            "id": 42,
+            "question": "What is the oldest university in the UK?",
+            "options": [
+              "Oxford",
+              "Cambridge",
+              "Edinburgh",
+              "St Andrews"
+            ],
+            "correct_answer": "Oxford",
+            "explanation": "The University of Oxford is the oldest university in the UK, founded in the 12th century."
+          },
+          {
+            "id": 43,
+            "question": "What is the second oldest university in the UK?",
+            "options": [
+              "Oxford",
+              "Cambridge",
+              "Edinburgh",
+              "St Andrews"
+            ],
+            "correct_answer": "Cambridge",
+            "explanation": "The University of Cambridge is the second oldest university in the UK."
+          },
+          {
+            "id": 44,
+            "question": "What is the national curriculum?",
+            "options": [
+              "A set of subjects and standards for primary and secondary schools",
+              "A list of required books",
+              "A set of exams",
+              "A teaching method"
+            ],
+            "correct_answer": "A set of subjects and standards for primary and secondary schools",
+            "explanation": "The national curriculum is a set of subjects and standards for primary and secondary schools in England."
+          },
+          {
+            "id": 45,
+            "question": "What is GCSE?",
+            "options": [
+              "General Certificate of Secondary Education",
+              "General Certificate of School Education",
+              "General Certificate of Standard Education",
+              "General Certificate of Senior Education"
+            ],
+            "correct_answer": "General Certificate of Secondary Education",
+            "explanation": "GCSE stands for General Certificate of Secondary Education, taken by students aged 14-16."
+          },
+          {
+            "id": 46,
+            "question": "What does NHS stand for?",
+            "options": [
+              "National Health Service",
+              "National Hospital Service",
+              "National Healthcare System",
+              "National Health System"
+            ],
+            "correct_answer": "National Health Service",
+            "explanation": "NHS stands for National Health Service, the publicly funded healthcare system in the UK."
+          },
+          {
+            "id": 47,
+            "question": "When was the NHS founded?",
+            "options": [
+              "1948",
+              "1939",
+              "1955",
+              "1960"
+            ],
+            "correct_answer": "1948",
+            "explanation": "The NHS was founded in 1948 by Aneurin Bevan."
+          },
+          {
+            "id": 48,
+            "question": "Is healthcare free in the UK?",
+            "options": [
+              "Yes, for all residents",
+              "No, everyone pays",
+              "Only for children",
+              "Only for the elderly"
+            ],
+            "correct_answer": "Yes, for all residents",
+            "explanation": "Healthcare is free at the point of use for all UK residents through the NHS."
+          },
+          {
+            "id": 49,
+            "question": "What is the emergency phone number in the UK?",
+            "options": [
+              "999",
+              "911",
+              "112",
+              "000"
+            ],
+            "correct_answer": "999",
+            "explanation": "999 is the emergency phone number in the UK for police, fire, and ambulance services."
+          },
+          {
+            "id": 50,
+            "question": "What is a GP?",
+            "options": [
+              "General Practitioner",
+              "General Physician",
+              "General Professional",
+              "General Provider"
+            ],
+            "correct_answer": "General Practitioner",
+            "explanation": "GP stands for General Practitioner, a doctor who provides primary healthcare."
+          }
+        ]
+      },
+      {
+        "chapterName": "What is the UK?",
+        "questions": [
+          {
+            "id": 6,
+            "question": "Which nations make up the United Kingdom?",
+            "options": [
+              "England, Wales, Scotland, and Northern Ireland",
+              "England, Wales, and Scotland only",
+              "Great Britain and Ireland",
+              "England and Scotland only"
+            ],
+            "correct_answer": "England, Wales, Scotland, and Northern Ireland",
+            "explanation": "The United Kingdom consists of four nations: England, Wales, Scotland, and Northern Ireland."
+          },
+          {
+            "id": 7,
+            "question": "When was the Act of Union between England and Scotland signed?",
+            "options": [
+              "1707",
+              "1800",
+              "1922",
+              "1066"
+            ],
+            "correct_answer": "1707",
+            "explanation": "The Act of Union between England and Scotland was signed in 1707, creating the Kingdom of Great Britain."
+          },
+          {
+            "id": 8,
+            "question": "What is the capital of Wales?",
+            "options": [
+              "Cardiff",
+              "Swansea",
+              "Newport",
+              "Wrexham"
+            ],
+            "correct_answer": "Cardiff",
+            "explanation": "Cardiff is the capital and largest city of Wales."
+          },
+          {
+            "id": 9,
+            "question": "What is the capital of Scotland?",
+            "options": [
+              "Glasgow",
+              "Edinburgh",
+              "Aberdeen",
+              "Dundee"
+            ],
+            "correct_answer": "Edinburgh",
+            "explanation": "Edinburgh is the capital city of Scotland."
+          },
+          {
+            "id": 10,
+            "question": "What is the capital of Northern Ireland?",
+            "options": [
+              "Belfast",
+              "Derry",
+              "Lisburn",
+              "Newry"
+            ],
+            "correct_answer": "Belfast",
+            "explanation": "Belfast is the capital and largest city of Northern Ireland."
+          }
+        ]
+      },
+      {
+        "chapterName": "A Long and Illustrious History",
+        "questions": [
+          {
+            "id": 11,
+            "question": "Who was the first Tudor monarch?",
+            "options": [
+              "Henry VII",
+              "Henry VIII",
+              "Elizabeth I",
+              "Mary I"
+            ],
+            "correct_answer": "Henry VII",
+            "explanation": "Henry VII was the first Tudor monarch, ruling from 1485 to 1509."
+          },
+          {
+            "id": 12,
+            "question": "What was the main cause of the English Civil War?",
+            "options": [
+              "Conflict between Parliament and the Crown",
+              "Religious differences",
+              "Foreign invasion",
+              "Economic crisis"
+            ],
+            "correct_answer": "Conflict between Parliament and the Crown",
+            "explanation": "The English Civil War was primarily caused by conflict between Parliament and the Crown over power and authority."
+          },
+          {
+            "id": 13,
+            "question": "When did the Industrial Revolution begin in Britain?",
+            "options": [
+              "Late 18th century",
+              "Early 17th century",
+              "Mid 19th century",
+              "Early 20th century"
+            ],
+            "correct_answer": "Late 18th century",
+            "explanation": "The Industrial Revolution began in Britain in the late 18th century, around 1760-1840."
+          },
+          {
+            "id": 14,
+            "question": "Who was the first female Prime Minister of the UK?",
+            "options": [
+              "Margaret Thatcher",
+              "Theresa May",
+              "Liz Truss",
+              "None of the above"
+            ],
+            "correct_answer": "Margaret Thatcher",
+            "explanation": "Margaret Thatcher was the first female Prime Minister of the UK, serving from 1979 to 1990."
+          },
+          {
+            "id": 15,
+            "question": "When did Britain join the European Economic Community (EEC)?",
+            "options": [
+              "1973",
+              "1957",
+              "1992",
+              "2002"
+            ],
+            "correct_answer": "1973",
+            "explanation": "Britain joined the European Economic Community (EEC) in 1973."
+          }
+        ]
+      },
+      {
+        "chapterName": "Modern, Thriving Society",
+        "questions": [
+          {
+            "id": 16,
+            "question": "What is the UK's official religion?",
+            "options": [
+              "Church of England",
+              "Roman Catholic Church",
+              "Presbyterian Church",
+              "No official religion"
+            ],
+            "correct_answer": "Church of England",
+            "explanation": "The Church of England is the official religion of the UK, with the monarch as its head."
+          },
+          {
+            "id": 17,
+            "question": "Which of these is a fundamental British value?",
+            "options": [
+              "Individual liberty",
+              "Conformity",
+              "State control",
+              "Religious uniformity"
+            ],
+            "correct_answer": "Individual liberty",
+            "explanation": "Individual liberty is one of the fundamental British values, allowing people to live their lives as they wish within the law."
+          },
+          {
+            "id": 18,
+            "question": "What is the population of the UK approximately?",
+            "options": [
+              "67 million",
+              "50 million",
+              "80 million",
+              "100 million"
+            ],
+            "correct_answer": "67 million",
+            "explanation": "The UK has a population of approximately 67 million people."
+          },
+          {
+            "id": 19,
+            "question": "What is the main language spoken in the UK?",
+            "options": [
+              "English",
+              "Welsh",
+              "Scottish Gaelic",
+              "Irish"
+            ],
+            "correct_answer": "English",
+            "explanation": "English is the main language spoken in the UK, though other languages are also spoken in different regions."
+          },
+          {
+            "id": 20,
+            "question": "What is the currency of the UK?",
+            "options": [
+              "Pound Sterling",
+              "Euro",
+              "Dollar",
+              "Yen"
+            ],
+            "correct_answer": "Pound Sterling",
+            "explanation": "The currency of the UK is the Pound Sterling (£)."
+          }
+        ]
+      },
+      {
+        "chapterName": "The UK Government",
+        "questions": [
+          {
+            "id": 21,
+            "question": "How often must a general election be held in the UK?",
+            "options": [
+              "At least every 5 years",
+              "At least every 4 years",
+              "At least every 3 years",
+              "At least every 7 years"
+            ],
+            "correct_answer": "At least every 5 years",
+            "explanation": "A general election must be held at least every 5 years in the UK."
+          },
+          {
+            "id": 22,
+            "question": "What is the role of the House of Lords?",
+            "options": [
+              "To examine and challenge the work of the government",
+              "To represent local constituencies",
+              "To form the government",
+              "To collect taxes"
+            ],
+            "correct_answer": "To examine and challenge the work of the government",
+            "explanation": "The House of Lords examines and challenges the work of the government and reviews and amends bills."
+          },
+          {
+            "id": 23,
+            "question": "Who is the head of state in the UK?",
+            "options": [
+              "The Prime Minister",
+              "The Monarch",
+              "The Speaker of the House",
+              "The Lord Chancellor"
+            ],
+            "correct_answer": "The Monarch",
+            "explanation": "The Monarch (currently King Charles III) is the head of state in the UK."
+          },
+          {
+            "id": 24,
+            "question": "What is the role of the Prime Minister?",
+            "options": [
+              "Head of state",
+              "Head of government",
+              "Head of the judiciary",
+              "Head of the military"
+            ],
+            "correct_answer": "Head of government",
+            "explanation": "The Prime Minister is the head of government and leads the executive branch."
+          },
+          {
+            "id": 25,
+            "question": "How many Members of Parliament (MPs) are there in the House of Commons?",
+            "options": [
+              "650",
+              "600",
+              "700",
+              "500"
+            ],
+            "correct_answer": "650",
+            "explanation": "There are 650 Members of Parliament (MPs) in the House of Commons."
+          }
+        ]
+      }
+    ]
+  }
+]

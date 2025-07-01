@@ -1,0 +1,2036 @@
+{
+  "bookTitle": "Discover Canada - Complete Guide",
+  "chapters": [
+    {
+      "chapterName": "Applying for Citizenship",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the age requirement for taking the citizenship test?",
+          "options": [
+            "18-54 years old",
+            "16-54 years old",
+            "18-65 years old",
+            "No age requirement"
+          ],
+          "correct_answer": "18-54 years old",
+          "explanation": "Immigrants between the ages of 18 and 54 must take the citizenship test and have adequate knowledge of English or French."
+        },
+        {
+          "id": 2,
+          "question": "What happens after passing the citizenship test?",
+          "options": [
+            "Immediate citizenship granted",
+            "Receive Notice to Appear to Take the Oath of Citizenship",
+            "Additional interview required",
+            "Wait for 1 year"
+          ],
+          "correct_answer": "Receive Notice to Appear to Take the Oath of Citizenship",
+          "explanation": "After passing the test and meeting all requirements, you receive a Notice to Appear to Take the Oath of Citizenship with ceremony details."
+        },
+        {
+          "id": 15,
+          "question": "What is required to prepare for the citizenship test?",
+          "options": [
+            "Only study the guide",
+            "Only take language classes",
+            "Study guide, practice questions, and take language classes if needed",
+            "Only practice with friends"
+          ],
+          "correct_answer": "Study guide, practice questions, and take language classes if needed",
+          "explanation": "To prepare for the citizenship test, you should study the guide, practice questions with others, and take English or French language classes if needed."
+        }
+      ]
+    },
+    {
+      "chapterName": "Rights and Responsibilities of Citizenship",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are the fundamental freedoms protected by the Canadian Charter of Rights and Freedoms?",
+          "options": [
+            "Freedom of conscience, religion, thought, belief, opinion, expression, peaceful assembly, and association",
+            "Only freedom of speech and religion",
+            "Only freedom of assembly and association",
+            "Only freedom of thought and belief"
+          ],
+          "correct_answer": "Freedom of conscience, religion, thought, belief, opinion, expression, peaceful assembly, and association",
+          "explanation": "The Charter guarantees these fundamental freedoms to all Canadians, forming the foundation of our democratic society."
+        },
+        {
+          "id": 2,
+          "question": "What is the minimum voting age in Canadian federal elections?",
+          "options": [
+            "16 years",
+            "18 years",
+            "19 years",
+            "21 years"
+          ],
+          "correct_answer": "18 years",
+          "explanation": "Canadian citizens who are 18 years or older have the right to vote in federal elections."
+        },
+        {
+          "id": 3,
+          "question": "What is one of the main responsibilities of Canadian citizenship?",
+          "options": [
+            "Speaking both official languages",
+            "Serving in the military",
+            "Obeying the law",
+            "Working for the government"
+          ],
+          "correct_answer": "Obeying the law",
+          "explanation": "Obeying the law is a fundamental responsibility of all Canadians, as it helps maintain peace and order in society."
+        },
+        {
+          "id": 31,
+          "question": "What is the Canadian Charter of Rights and Freedoms?",
+          "options": [
+            "A part of the Constitution that protects basic rights and freedoms",
+            "A government policy document",
+            "A historical treaty",
+            "A citizenship handbook"
+          ],
+          "correct_answer": "A part of the Constitution that protects basic rights and freedoms",
+          "explanation": "The Charter is part of the Constitution Act, 1982, and protects the basic rights and freedoms of all Canadians."
+        },
+        {
+          "id": 32,
+          "question": "What is the right to vote in Canada?",
+          "options": [
+            "A privilege",
+            "A right and responsibility",
+            "Optional",
+            "Only for certain groups"
+          ],
+          "correct_answer": "A right and responsibility",
+          "explanation": "Voting is both a right and a responsibility of Canadian citizenship, essential to our democracy."
+        },
+        {
+          "id": 33,
+          "question": "What is the responsibility to serve on a jury?",
+          "options": [
+            "Optional for citizens",
+            "Required for all citizens",
+            "Only for lawyers",
+            "Only for government employees"
+          ],
+          "correct_answer": "Required for all citizens",
+          "explanation": "Serving on a jury when called is a responsibility of Canadian citizenship, helping ensure fair trials."
+        },
+        {
+          "id": 61,
+          "question": "What is the right to equality in Canada?",
+          "options": [
+            "Equal treatment under the law",
+            "Equal income for all",
+            "Equal housing for all",
+            "Equal jobs for all"
+          ],
+          "correct_answer": "Equal treatment under the law",
+          "explanation": "The right to equality means equal treatment under the law, regardless of race, gender, or other characteristics."
+        },
+        {
+          "id": 62,
+          "question": "What is the responsibility to respect others' rights?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Respecting others' rights is a legal responsibility of all Canadians."
+        },
+        {
+          "id": 63,
+          "question": "What is the right to peaceful assembly?",
+          "options": [
+            "Right to protest",
+            "Right to riot",
+            "Right to fight",
+            "Right to ignore laws"
+          ],
+          "correct_answer": "Right to protest",
+          "explanation": "The right to peaceful assembly allows Canadians to gather and protest peacefully."
+        },
+        {
+          "id": 91,
+          "question": "What is the right to freedom of religion?",
+          "options": [
+            "Right to practice any religion",
+            "Right to force religion",
+            "Right to ignore laws",
+            "Right to discriminate"
+          ],
+          "correct_answer": "Right to practice any religion",
+          "explanation": "Freedom of religion means Canadians can practice any religion or none at all."
+        },
+        {
+          "id": 92,
+          "question": "What is the responsibility to participate in democracy?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for politicians"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Participating in democracy through voting is a responsibility of Canadian citizenship."
+        },
+        {
+          "id": 93,
+          "question": "What is the right to freedom of expression?",
+          "options": [
+            "Right to speak freely",
+            "Right to lie",
+            "Right to slander",
+            "Right to ignore laws"
+          ],
+          "correct_answer": "Right to speak freely",
+          "explanation": "Freedom of expression allows Canadians to express their opinions freely, within reasonable limits."
+        },
+        {
+          "id": 121,
+          "question": "What is the right to equality?",
+          "options": [
+            "Equal treatment under law",
+            "Equal wealth",
+            "Equal jobs",
+            "Equal housing"
+          ],
+          "correct_answer": "Equal treatment under law",
+          "explanation": "The right to equality means all Canadians are entitled to equal treatment under the law."
+        },
+        {
+          "id": 122,
+          "question": "What is the responsibility to respect others' rights?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Respecting others' rights is a fundamental responsibility of Canadian citizenship."
+        },
+        {
+          "id": 123,
+          "question": "What is the right to peaceful assembly?",
+          "options": [
+            "Right to protest",
+            "Right to riot",
+            "Right to ignore laws",
+            "Right to block roads"
+          ],
+          "correct_answer": "Right to protest",
+          "explanation": "The right to peaceful assembly allows Canadians to gather and protest peacefully."
+        },
+        {
+          "id": 151,
+          "question": "What is the right to vote?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Political party right"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to vote is a fundamental right of Canadian citizenship."
+        },
+        {
+          "id": 152,
+          "question": "What is the responsibility to serve on a jury?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for lawyers",
+            "Only for judges"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Serving on a jury when called is a legal responsibility of Canadian citizenship."
+        },
+        {
+          "id": 153,
+          "question": "What is the right to enter and leave Canada?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Travel agency right"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "Canadian citizens have the right to enter and leave Canada freely."
+        },
+        {
+          "id": 181,
+          "question": "What is the right to be presumed innocent?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to be presumed innocent until proven guilty is a fundamental right in Canada."
+        },
+        {
+          "id": 182,
+          "question": "What is the responsibility to obey laws?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Obeying laws is a fundamental responsibility of Canadian citizenship."
+        },
+        {
+          "id": 183,
+          "question": "What is the right to a fair trial?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to a fair trial is a fundamental right protected by the Charter of Rights and Freedoms."
+        },
+        {
+          "id": 211,
+          "question": "What is the right to privacy?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to privacy is a fundamental right protected by the Charter of Rights and Freedoms."
+        },
+        {
+          "id": 212,
+          "question": "What is the responsibility to pay taxes?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Paying taxes is a legal responsibility of Canadian citizenship."
+        },
+        {
+          "id": 213,
+          "question": "What is the right to freedom of association?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to freedom of association allows Canadians to join groups and organizations."
+        },
+        {
+          "id": 241,
+          "question": "What is the right to freedom of conscience?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to freedom of conscience allows Canadians to follow their moral and ethical beliefs."
+        },
+        {
+          "id": 242,
+          "question": "What is the responsibility to respect others' rights?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Respecting others' rights is a legal responsibility of Canadian citizenship."
+        },
+        {
+          "id": 243,
+          "question": "What is the right to freedom of peaceful assembly?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to peaceful assembly allows Canadians to gather and express their views."
+        },
+        {
+          "id": 271,
+          "question": "What is the right to freedom of thought?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to freedom of thought allows Canadians to hold their own beliefs and opinions."
+        },
+        {
+          "id": 272,
+          "question": "What is the responsibility to participate in democracy?",
+          "options": [
+            "Optional",
+            "Required by law",
+            "Only for government",
+            "Only for police"
+          ],
+          "correct_answer": "Required by law",
+          "explanation": "Participating in democracy is a legal responsibility of Canadian citizenship."
+        },
+        {
+          "id": 273,
+          "question": "What is the right to freedom of belief?",
+          "options": [
+            "Optional right",
+            "Fundamental right",
+            "Government privilege",
+            "Police privilege"
+          ],
+          "correct_answer": "Fundamental right",
+          "explanation": "The right to freedom of belief allows Canadians to follow their religious or spiritual beliefs."
+        }
+      ]
+    },
+    {
+      "chapterName": "Aboriginal Peoples",
+      "questions": [
+        {
+          "id": 6,
+          "question": "What are the three distinct groups of Aboriginal peoples in Canada?",
+          "options": [
+            "First Nations, Inuit, and M\u00e9tis",
+            "Indians, Eskimos, and Natives",
+            "Tribes, Bands, and Clans",
+            "Huron, Cree, and Dene only"
+          ],
+          "correct_answer": "First Nations, Inuit, and M\u00e9tis",
+          "explanation": "The term Aboriginal peoples refers to three distinct groups: First Nations (formerly called Indians), Inuit, and M\u00e9tis."
+        },
+        {
+          "id": 7,
+          "question": "What percentage of Aboriginal people are First Nations?",
+          "options": [
+            "30%",
+            "45%",
+            "65%",
+            "80%"
+          ],
+          "correct_answer": "65%",
+          "explanation": "About 65% of Aboriginal people are First Nations, while 30% are M\u00e9tis and 4% are Inuit."
+        },
+        {
+          "id": 8,
+          "question": "What historical event did the federal government apologize for in 2008?",
+          "options": [
+            "Land treaties",
+            "Residential schools",
+            "Voting restrictions",
+            "Language bans"
+          ],
+          "correct_answer": "Residential schools",
+          "explanation": "In 2008, Ottawa formally apologized to former students of residential schools, where Aboriginal children faced hardships and were prohibited from using their languages and cultural practices."
+        }
+      ]
+    },
+    {
+      "chapterName": "Canadian History",
+      "questions": [
+        {
+          "id": 9,
+          "question": "Who was the first European to map Canada's Atlantic shore?",
+          "options": [
+            "Jacques Cartier",
+            "John Cabot",
+            "Samuel de Champlain",
+            "Vikings"
+          ],
+          "correct_answer": "John Cabot",
+          "explanation": "John Cabot was the first to map Canada's Atlantic shore in 1497, setting foot on Newfoundland or Cape Breton Island."
+        },
+        {
+          "id": 10,
+          "question": "What is the origin of the name 'Canada'?",
+          "options": [
+            "British word for colony",
+            "French word for village",
+            "Iroquoian word for village",
+            "Portuguese word for path"
+          ],
+          "correct_answer": "Iroquoian word for village",
+          "explanation": "The name Canada comes from the Iroquoian word 'kanata', meaning 'village', which Jacques Cartier heard from two captured guides."
+        },
+        {
+          "id": 11,
+          "question": "What significant event happened in 1774 through the Quebec Act?",
+          "options": [
+            "Quebec became independent",
+            "Catholics gained religious freedom and right to hold public office",
+            "French became the only official language",
+            "Quebec joined the United States"
+          ],
+          "correct_answer": "Catholics gained religious freedom and right to hold public office",
+          "explanation": "The Quebec Act of 1774 allowed religious freedom for Catholics and permitted them to hold public office, a practice not then allowed in Britain."
+        },
+        {
+          "id": 16,
+          "question": "Who was Canada's first Prime Minister?",
+          "options": [
+            "Sir John A. Macdonald",
+            "Sir Wilfrid Laurier",
+            "Sir George-\u00c9tienne Cartier",
+            "Louis Riel"
+          ],
+          "correct_answer": "Sir John A. Macdonald",
+          "explanation": "Sir John Alexander Macdonald became Canada's first Prime Minister in 1867. His portrait is on the $10 bill."
+        },
+        {
+          "id": 17,
+          "question": "When did Canada officially become a country?",
+          "options": [
+            "1864",
+            "1867",
+            "1871",
+            "1873"
+          ],
+          "correct_answer": "1867",
+          "explanation": "The Dominion of Canada was officially born on July 1, 1867, when the British North America Act was passed."
+        },
+        {
+          "id": 18,
+          "question": "What was the significance of the Battle of Vimy Ridge in 1917?",
+          "options": [
+            "It ended World War I",
+            "It was Canada's first military defeat",
+            "It established Canada's reputation as 'shock troops of the British Empire'",
+            "It led to Canadian independence"
+          ],
+          "correct_answer": "It established Canada's reputation as 'shock troops of the British Empire'",
+          "explanation": "The Canadian Corps captured Vimy Ridge in April 1917, securing Canadians' reputation for valor as the 'shock troops of the British Empire.'"
+        },
+        {
+          "id": 37,
+          "question": "What was the significance of the Quebec Act of 1774?",
+          "options": [
+            "Granted independence to Quebec",
+            "Allowed religious freedom for Catholics",
+            "Created the province of Quebec",
+            "Ended French rule"
+          ],
+          "correct_answer": "Allowed religious freedom for Catholics",
+          "explanation": "The Quebec Act allowed religious freedom for Catholics and permitted them to hold public office."
+        },
+        {
+          "id": 38,
+          "question": "What was the Underground Railway?",
+          "options": [
+            "A train system",
+            "A secret network helping slaves escape",
+            "A mining operation",
+            "A military operation"
+          ],
+          "correct_answer": "A secret network helping slaves escape",
+          "explanation": "The Underground Railway was a secret network that helped thousands of slaves escape to freedom in Canada."
+        },
+        {
+          "id": 39,
+          "question": "What was the significance of the Battle of the Plains of Abraham?",
+          "options": [
+            "Ended French rule in Canada",
+            "Started the American Revolution",
+            "Created the United States",
+            "Established British rule in America"
+          ],
+          "correct_answer": "Ended French rule in Canada",
+          "explanation": "The Battle of the Plains of Abraham in 1759 led to the end of French rule in Canada."
+        },
+        {
+          "id": 67,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 68,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 69,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        },
+        {
+          "id": 97,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 98,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 99,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        },
+        {
+          "id": 124,
+          "question": "What is the significance of Canadian identity?",
+          "options": [
+            "Based on race",
+            "Based on religion",
+            "Based on diversity",
+            "Based on language"
+          ],
+          "correct_answer": "Based on diversity",
+          "explanation": "Canadian identity is based on diversity, multiculturalism, and shared values."
+        },
+        {
+          "id": 125,
+          "question": "What is the role of official languages in Canada?",
+          "options": [
+            "Communication",
+            "Cultural heritage",
+            "National unity",
+            "All of these"
+          ],
+          "correct_answer": "All of these",
+          "explanation": "Official languages serve multiple purposes including communication, cultural heritage, and national unity."
+        },
+        {
+          "id": 126,
+          "question": "What is the significance of multiculturalism in Canada?",
+          "options": [
+            "Just a policy",
+            "Core value",
+            "Recent addition",
+            "Optional feature"
+          ],
+          "correct_answer": "Core value",
+          "explanation": "Multiculturalism is a core value of Canadian society, celebrating our diversity."
+        },
+        {
+          "id": 127,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 128,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 129,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        },
+        {
+          "id": 154,
+          "question": "What is the significance of the Canadian flag?",
+          "options": [
+            "Just a flag",
+            "National symbol",
+            "Military symbol",
+            "Sports symbol"
+          ],
+          "correct_answer": "National symbol",
+          "explanation": "The Canadian flag is our most important national symbol, representing our unity and values."
+        },
+        {
+          "id": 155,
+          "question": "What is the role of the Governor General?",
+          "options": [
+            "Head of State",
+            "Head of Government",
+            "Military leader",
+            "Police chief"
+          ],
+          "correct_answer": "Head of State",
+          "explanation": "The Governor General represents the Queen as Canada's Head of State."
+        },
+        {
+          "id": 156,
+          "question": "What is the significance of the national anthem?",
+          "options": [
+            "Just a song",
+            "National symbol",
+            "Military march",
+            "Sports theme"
+          ],
+          "correct_answer": "National symbol",
+          "explanation": "O Canada is our national anthem, symbolizing our unity and pride as Canadians."
+        },
+        {
+          "id": 157,
+          "question": "What was the significance of the Quebec Act of 1774?",
+          "options": [
+            "Created Canada",
+            "Protected French rights",
+            "Ended monarchy",
+            "Started US rule"
+          ],
+          "correct_answer": "Protected French rights",
+          "explanation": "The Quebec Act protected French language, religion, and civil law in Quebec."
+        },
+        {
+          "id": 158,
+          "question": "What was the significance of the Underground Railway?",
+          "options": [
+            "Just a train",
+            "Escape route",
+            "Trade route",
+            "Military route"
+          ],
+          "correct_answer": "Escape route",
+          "explanation": "The Underground Railway helped enslaved people escape to freedom in Canada."
+        },
+        {
+          "id": 159,
+          "question": "What was the significance of the Battle of the Plains of Abraham?",
+          "options": [
+            "Created Canada",
+            "Changed control",
+            "Ended monarchy",
+            "Started US rule"
+          ],
+          "correct_answer": "Changed control",
+          "explanation": "The Battle of the Plains of Abraham in 1759 led to British control of New France."
+        },
+        {
+          "id": 217,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 218,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 219,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        },
+        {
+          "id": 247,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 248,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 249,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        },
+        {
+          "id": 277,
+          "question": "What was the significance of the War of 1812?",
+          "options": [
+            "Created Canada",
+            "Defended Canada",
+            "Ended British rule",
+            "Started US rule"
+          ],
+          "correct_answer": "Defended Canada",
+          "explanation": "The War of 1812 saw Canadians successfully defend their territory against American invasion."
+        },
+        {
+          "id": 278,
+          "question": "What was the significance of the Canadian Pacific Railway?",
+          "options": [
+            "Just a train",
+            "United Canada",
+            "Created provinces",
+            "Ended British rule"
+          ],
+          "correct_answer": "United Canada",
+          "explanation": "The Canadian Pacific Railway united the country from coast to coast in 1885."
+        },
+        {
+          "id": 279,
+          "question": "What was the significance of the Statute of Westminster?",
+          "options": [
+            "Created Canada",
+            "Gave independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Gave independence",
+          "explanation": "The Statute of Westminster in 1931 gave Canada full legal independence from Britain."
+        }
+      ]
+    },
+    {
+      "chapterName": "Government and Democracy",
+      "questions": [
+        {
+          "id": 19,
+          "question": "What type of government system was established at Confederation?",
+          "options": [
+            "Single level government",
+            "Two levels: federal and provincial",
+            "Three levels including municipal",
+            "Colonial government"
+          ],
+          "correct_answer": "Two levels: federal and provincial",
+          "explanation": "The Fathers of Confederation created two levels of government: federal and provincial, with each province having control over areas like education and health."
+        },
+        {
+          "id": 20,
+          "question": "What is responsible government in Canada?",
+          "options": [
+            "Government that responds to all requests",
+            "Government that must resign if it loses a confidence vote",
+            "Government that is responsible for everything",
+            "Government that reports to Britain"
+          ],
+          "correct_answer": "Government that must resign if it loses a confidence vote",
+          "explanation": "Under responsible government, if the government loses a confidence vote in the assembly, it must resign."
+        }
+      ]
+    },
+    {
+      "chapterName": "Women's Rights and Equality",
+      "questions": [
+        {
+          "id": 21,
+          "question": "Who was the founder of the women's suffrage movement in Canada?",
+          "options": [
+            "Laura Secord",
+            "Dr. Emily Stowe",
+            "Agnes Macphail",
+            "Mary Ann Shadd Cary"
+          ],
+          "correct_answer": "Dr. Emily Stowe",
+          "explanation": "Dr. Emily Stowe, the first Canadian woman to practice medicine in Canada, founded the women's suffrage movement in Canada."
+        },
+        {
+          "id": 22,
+          "question": "Which province was the first to grant women the right to vote?",
+          "options": [
+            "Ontario",
+            "Quebec",
+            "Manitoba",
+            "British Columbia"
+          ],
+          "correct_answer": "Manitoba",
+          "explanation": "In 1916, Manitoba became the first province to grant voting rights to women."
+        }
+      ]
+    },
+    {
+      "chapterName": "Modern Canada",
+      "questions": [
+        {
+          "id": 10,
+          "question": "What is Canada's official policy regarding cultural diversity?",
+          "options": [
+            "Assimilation",
+            "Multiculturalism",
+            "Segregation",
+            "Cultural isolation"
+          ],
+          "correct_answer": "Multiculturalism",
+          "explanation": "Multiculturalism is a fundamental characteristic of Canadian heritage and identity, celebrating diversity and promoting harmony."
+        },
+        {
+          "id": 11,
+          "question": "What is Canada's role in international organizations?",
+          "options": [
+            "Member of NATO, UN, and Commonwealth",
+            "Only part of the United Nations",
+            "No international affiliations",
+            "Member of European Union"
+          ],
+          "correct_answer": "Member of NATO, UN, and Commonwealth",
+          "explanation": "Canada is an active member of major international organizations including NATO, the United Nations, and the Commonwealth."
+        },
+        {
+          "id": 12,
+          "question": "What is Canada's current population approximately?",
+          "options": [
+            "30 million",
+            "35 million",
+            "38 million",
+            "45 million"
+          ],
+          "correct_answer": "38 million",
+          "explanation": "Canada's population is approximately 38 million people, with most living in urban areas near the southern border."
+        },
+        {
+          "id": 40,
+          "question": "What is the significance of the Canadian Multiculturalism Act?",
+          "options": [
+            "Just a law",
+            "Official policy",
+            "Recent addition",
+            "Optional feature"
+          ],
+          "correct_answer": "Official policy",
+          "explanation": "The Multiculturalism Act of 1988 made multiculturalism an official policy of Canada."
+        },
+        {
+          "id": 41,
+          "question": "What is Canada's role in peacekeeping?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of UN peacekeeping and has played a key role since 1956."
+        },
+        {
+          "id": 42,
+          "question": "What is the significance of the Canadian Constitution Act of 1982?",
+          "options": [
+            "Just a law",
+            "Complete independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Complete independence",
+          "explanation": "The Constitution Act of 1982 gave Canada complete control over its constitution."
+        },
+        {
+          "id": 70,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 71,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 72,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 100,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 101,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 102,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 130,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 131,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 132,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 160,
+          "question": "What is the significance of the Canadian Multiculturalism Act?",
+          "options": [
+            "Just a law",
+            "Official policy",
+            "Recent addition",
+            "Optional feature"
+          ],
+          "correct_answer": "Official policy",
+          "explanation": "The Multiculturalism Act of 1988 made multiculturalism an official policy of Canada."
+        },
+        {
+          "id": 161,
+          "question": "What is Canada's role in peacekeeping?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of UN peacekeeping and has played a key role since 1956."
+        },
+        {
+          "id": 162,
+          "question": "What is the significance of the Canadian Constitution Act of 1982?",
+          "options": [
+            "Just a law",
+            "Complete independence",
+            "Ended monarchy",
+            "Created provinces"
+          ],
+          "correct_answer": "Complete independence",
+          "explanation": "The Constitution Act of 1982 gave Canada complete control over its constitution."
+        },
+        {
+          "id": 190,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 191,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 192,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 220,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 221,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 222,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 250,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 251,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 252,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        },
+        {
+          "id": 280,
+          "question": "What is Canada's role in the United Nations?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of the United Nations and has played an active role since 1945."
+        },
+        {
+          "id": 281,
+          "question": "What is the significance of the North American Free Trade Agreement?",
+          "options": [
+            "Just a trade deal",
+            "Major economic agreement",
+            "Military alliance",
+            "Political union"
+          ],
+          "correct_answer": "Major economic agreement",
+          "explanation": "NAFTA created one of the world's largest free trade zones between Canada, the US, and Mexico."
+        },
+        {
+          "id": 282,
+          "question": "What is Canada's role in NATO?",
+          "options": [
+            "No role",
+            "Founding member",
+            "Recent member",
+            "Observer only"
+          ],
+          "correct_answer": "Founding member",
+          "explanation": "Canada is a founding member of NATO and has been a key contributor to the alliance since 1949."
+        }
+      ]
+    },
+    {
+      "chapterName": "Canadian Economy",
+      "questions": [
+        {
+          "id": 25,
+          "question": "What was one of the first major companies in Canada?",
+          "options": [
+            "Canadian Pacific Railway",
+            "Hudson's Bay Company",
+            "Air Canada",
+            "Bell Canada"
+          ],
+          "correct_answer": "Hudson's Bay Company",
+          "explanation": "The Hudson's Bay Company, with French, British and Aboriginal employees, was one of the first companies and dominated the fur trade."
+        },
+        {
+          "id": 26,
+          "question": "When did the Montreal Stock Exchange open?",
+          "options": [
+            "1812",
+            "1832",
+            "1852",
+            "1872"
+          ],
+          "correct_answer": "1832",
+          "explanation": "The Montreal Stock Exchange opened in 1832, as part of the development of financial institutions in the late 18th and early 19th centuries."
+        },
+        {
+          "id": 55,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 56,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 57,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 85,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 86,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 87,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 115,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 116,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 117,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 145,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 146,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 147,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 175,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 176,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 177,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 205,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 206,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 207,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 235,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 236,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 237,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 265,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 266,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 267,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        },
+        {
+          "id": 295,
+          "question": "What is Canada's main economic system?",
+          "options": [
+            "Socialism",
+            "Mixed market economy",
+            "Communism",
+            "Pure capitalism"
+          ],
+          "correct_answer": "Mixed market economy",
+          "explanation": "Canada has a mixed market economy, combining private enterprise with government regulation."
+        },
+        {
+          "id": 296,
+          "question": "What is the role of the Bank of Canada?",
+          "options": [
+            "Print money",
+            "Set interest rates",
+            "Both print money and set rates",
+            "Run banks"
+          ],
+          "correct_answer": "Both print money and set rates",
+          "explanation": "The Bank of Canada manages the money supply and sets interest rates to maintain economic stability."
+        },
+        {
+          "id": 297,
+          "question": "What is Canada's main export?",
+          "options": [
+            "Technology",
+            "Natural resources",
+            "Manufactured goods",
+            "Services"
+          ],
+          "correct_answer": "Natural resources",
+          "explanation": "Natural resources, including oil, minerals, and timber, are Canada's main exports."
+        }
+      ]
+    },
+    {
+      "chapterName": "Canada's Regions",
+      "questions": [
+        {
+          "id": 28,
+          "id": 73,
+          "question": "What is the role of the Cabinet?",
+          "options": [
+            "Make laws",
+            "Advise Prime Minister",
+            "Run elections",
+            "Appoint judges"
+          ],
+          "correct_answer": "Advise Prime Minister",
+          "explanation": "The Cabinet advises the Prime Minister and helps make government decisions."
+        },
+        {
+          "id": 74,
+          "question": "What is the role of the Opposition?",
+          "options": [
+            "Support government",
+            "Challenge government",
+            "Run government",
+            "Ignore government"
+          ],
+          "correct_answer": "Challenge government",
+          "explanation": "The Opposition's role is to challenge the government and present alternative views."
+        },
+        {
+          "id": 75,
+          "question": "What is the role of the Speaker of the House?",
+          "options": [
+            "Lead debates",
+            "Maintain order",
+            "Make laws",
+            "Run government"
+          ],
+          "correct_answer": "Maintain order",
+          "explanation": "The Speaker maintains order and ensures fair debate in the House of Commons."
+        },
+        {
+          "id": 103,
+          "question": "What is the role of the Cabinet?",
+          "options": [
+            "Make laws",
+            "Advise Prime Minister",
+            "Run elections",
+            "Appoint judges"
+          ],
+          "correct_answer": "Advise Prime Minister",
+          "explanation": "The Cabinet advises the Prime Minister and helps make government decisions."
+        },
+        {
+          "id": 104,
+          "question": "What is the role of the Opposition?",
+          "options": [
+            "Support government",
+            "Challenge government",
+            "Run government",
+            "Ignore government"
+          ],
+          "correct_answer": "Challenge government",
+          "explanation": "The Opposition's role is to challenge the government and present alternative views."
+        },
+        {
+          "id": 105,
+          "question": "What is the role of the Speaker of the House?",
+          "options": [
+            "Lead debates",
+            "Maintain order",
+            "Make laws",
+            "Run government"
+          ],
+          "correct_answer": "Maintain order",
+          "explanation": "The Speaker maintains order and ensures fair debate in the House of Commons."
+        },
+        {
+          "id": 133,
+          "question": "What is the role of the Cabinet?",
+          "options": [
+            "Make laws",
+            "Advise Prime Minister",
+            "Run elections",
+            "Appoint judges"
+          ],
+          "correct_answer": "Advise Prime Minister",
+          "explanation": "The Cabinet advises the Prime Minister and helps make government decisions."
+        },
+        {
+          "id": 134,
+          "question": "What is the role of the Opposition?",
+          "options": [
+            "Support government",
+            "Challenge government",
+            "Run government",
+            "Ignore government"
+          ],
+          "correct_answer": "Challenge government",
+          "explanation": "The Opposition's role is to challenge the government and present alternative views."
+        },
+        {
+          "id": 135,
+          "question": "What is the role of the Speaker of the House?",
+          "options": [
+            "Lead debates",
+            "Maintain order",
+            "Make laws",
+            "Run government"
+          ],
+          "correct_answer": "Maintain order",
+          "explanation": "The Speaker maintains order and ensures fair debate in the House of Commons."
+        },
+        {
+          "id": 163,
+          "question": "What is the role of the Prime Minister?",
+          "options": [
+            "Head of State",
+            "Head of Government",
+            "Military leader",
+            "Police chief"
+          ],
+          "correct_answer": "Head of Government",
+          "explanation": "The Prime Minister is the Head of Government and leader of the political party in power."
+        },
+        {
+          "id": 164,
+          "question": "What is the role of the Senate?",
+          "options": [
+            "Lower house",
+            "Upper house",
+            "Military council",
+            "Police council"
+          ],
+          "correct_answer": "Upper house",
+          "explanation": "The Senate is the upper house of Parliament, reviewing and suggesting changes to laws."
+        },
+        {
+          "id": 165,
+          "question": "What is the role of the House of Commons?",
+          "options": [
+            "Upper house",
+            "Lower house",
+            "Military council",
+            "Police council"
+          ],
+          "correct_answer": "Lower house",
+          "explanation": "The House of Commons is the lower house of Parliament, where most laws are first introduced."
+        },
+        {
+          "id": 193,
+          "question": "What is the role of the Cabinet?",
+          "options": [
+            "Make laws",
+            "Advise Prime Minister",
+            "Run elections",
+            "Appoint judges"
+          ],
+          "correct_answer": "Advise Prime Minister",
+          "explanation": "The Cabinet advises the Prime Minister and helps make government decisions."
+        },
+        {
+          "id": 194,
+          "question": "What is the role of the Opposition?",
+          "options": [
+            "Support government",
+            "Challenge government",
+            "Run government",
+            "Ignore government"
+          ],
+          "correct_answer": "Challenge government",
+          "explanation": "The Opposition's role is to challenge the government and present alternative views."
+        },
+        {
+          "id": 195,
+          "question": "What is the role of the Speaker of the House?",
+          "options": [
+            "Lead debates",
+            "Maintain order",
+            "Make laws",
+            "Run government"
+          ],
+          "correct_answer": "Maintain order",
+          "explanation": "The Speaker maintains order and ensures fair debate in the House of Commons."
+        }
+      ]
+    },
+    {
+      "chapterName": "Federal Elections",
+      "questions": [
+        {
+          "id": 76,
+          "question": "What is the role of political parties in elections?",
+          "options": [
+            "No role",
+            "Nominate candidates",
+            "Count votes",
+            "Run elections"
+          ],
+          "correct_answer": "Nominate candidates",
+          "explanation": "Political parties nominate candidates and present their policies to voters."
+        },
+        {
+          "id": 77,
+          "question": "What is the role of the Chief Electoral Officer?",
+          "options": [
+            "Run elections",
+            "Count votes",
+            "Both run elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run elections and count votes",
+          "explanation": "The Chief Electoral Officer is responsible for running federal elections and ensuring they are fair and impartial."
+        },
+        {
+          "id": 78,
+          "question": "What is the role of returning officers?",
+          "options": [
+            "Run local elections",
+            "Count votes",
+            "Both run local elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run local elections and count votes",
+          "explanation": "Returning officers manage elections in their ridings and ensure fair voting."
+        },
+        {
+          "id": 106,
+          "question": "What is the role of political parties in elections?",
+          "options": [
+            "No role",
+            "Nominate candidates",
+            "Count votes",
+            "Run elections"
+          ],
+          "correct_answer": "Nominate candidates",
+          "explanation": "Political parties nominate candidates and present their policies to voters."
+        },
+        {
+          "id": 107,
+          "question": "What is the role of the Chief Electoral Officer?",
+          "options": [
+            "Run elections",
+            "Count votes",
+            "Both run elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run elections and count votes",
+          "explanation": "The Chief Electoral Officer is responsible for running federal elections and ensuring they are fair and impartial."
+        },
+        {
+          "id": 108,
+          "question": "What is the role of returning officers?",
+          "options": [
+            "Run local elections",
+            "Count votes",
+            "Both run local elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run local elections and count votes",
+          "explanation": "Returning officers manage elections in their ridings and ensure fair voting."
+        },
+        {
+          "id": 136,
+          "question": "What is the role of political parties in elections?",
+          "options": [
+            "No role",
+            "Nominate candidates",
+            "Count votes",
+            "Run elections"
+          ],
+          "correct_answer": "Nominate candidates",
+          "explanation": "Political parties nominate candidates and present their policies to voters."
+        },
+        {
+          "id": 137,
+          "question": "What is the role of the Chief Electoral Officer?",
+          "options": [
+            "Run elections",
+            "Count votes",
+            "Both run elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run elections and count votes",
+          "explanation": "The Chief Electoral Officer is responsible for running federal elections and ensuring they are fair and impartial."
+        },
+        {
+          "id": 138,
+          "question": "What is the role of returning officers?",
+          "options": [
+            "Run local elections",
+            "Count votes",
+            "Both run local elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run local elections and count votes",
+          "explanation": "Returning officers manage elections in their ridings and ensure fair voting."
+        },
+        {
+          "id": 166,
+          "question": "What is the role of Elections Canada?",
+          "options": [
+            "Run elections",
+            "Count votes",
+            "Both run elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run elections and count votes",
+          "explanation": "Elections Canada is responsible for running federal elections and ensuring they are fair and impartial."
+        },
+        {
+          "id": 167,
+          "question": "What is a riding?",
+          "options": [
+            "Horse race",
+            "Electoral district",
+            "Military unit",
+            "Police unit"
+          ],
+          "correct_answer": "Electoral district",
+          "explanation": "A riding is an electoral district represented by a Member of Parliament."
+        },
+        {
+          "id": 168,
+          "question": "What is the role of political parties in elections?",
+          "options": [
+            "No role",
+            "Nominate candidates",
+            "Count votes",
+            "Run elections"
+          ],
+          "correct_answer": "Nominate candidates",
+          "explanation": "Political parties nominate candidates and present their policies to voters."
+        },
+        {
+          "id": 196,
+          "question": "What is the role of political parties in elections?",
+          "options": [
+            "No role",
+            "Nominate candidates",
+            "Count votes",
+            "Run elections"
+          ],
+          "correct_answer": "Nominate candidates",
+          "explanation": "Political parties nominate candidates and present their policies to voters."
+        },
+        {
+          "id": 197,
+          "question": "What is the role of the Chief Electoral Officer?",
+          "options": [
+            "Run elections",
+            "Count votes",
+            "Both run elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run elections and count votes",
+          "explanation": "The Chief Electoral Officer is responsible for running federal elections and ensuring they are fair and impartial."
+        },
+        {
+          "id": 198,
+          "question": "What is the role of returning officers?",
+          "options": [
+            "Run local elections",
+            "Count votes",
+            "Both run local elections and count votes",
+            "Appoint candidates"
+          ],
+          "correct_answer": "Both run local elections and count votes",
+          "explanation": "Returning officers manage elections in their ridings and ensure fair voting."
+        }
+      ]
+    }
+  ]
+}
