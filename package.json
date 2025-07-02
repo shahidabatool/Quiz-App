@@ -7,9 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export -p web",
-    "netlify-build": "expo export -p web -s",
-    "export": "expo export -p web --clear"
+    "build": "npx expo export:web",
+    "netlify-build": "CI=true npx expo export:web",
+    "export": "npx expo export:web"
   },
   "dependencies": {
     "@expo/metro-config": "^0.20.15",

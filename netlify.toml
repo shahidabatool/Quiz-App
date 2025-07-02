@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "CI=true npm install && npx expo install --fix && npx expo export:web"
+  publish = "web-build"
 
 [build.environment]
   NODE_VERSION = "18"
