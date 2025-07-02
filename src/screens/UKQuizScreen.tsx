@@ -335,7 +335,7 @@ const UKQuizScreen = () => {
 
   if (quizCompleted) {
     const percent = (score / quizQuestions.length) * 100;
-    const passed = score >= 18;
+    const passed = percent >= 75;
     const timeExpired = timeLeft === 0;
     
     return (
@@ -373,8 +373,18 @@ const UKQuizScreen = () => {
           <Text style={[styles.resultText, { 
             color: passed ? theme.colors.neonGreen : theme.colors.error 
           }]}> 
-            {passed ? 'PASSED' : 'FAILED'}
+            {passed ? 'PASSED! ✅' : 'FAILED ❌'}
           </Text>
+          {passed && (
+            <Text style={[styles.congratsText, { color: theme.colors.neonGreen }]}>
+              🎉 Congratulations! {mode === 'mock' ? 'You\'re ready for the real UK citizenship test!' : 'You\'ve mastered this UK module!'}
+            </Text>
+          )}
+          {!passed && (
+            <Text style={[styles.encouragementText, { color: theme.colors.textSecondary }]}>
+              You need 75% to pass. Keep practicing! 💪
+            </Text>
+          )}
         </Animated.View>
 
         <FuturisticButton
@@ -727,6 +737,21 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 1,
     textAlign: 'center',
+  },
+  congratsText: {
+    fontSize: 18,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginTop: 15,
+    paddingHorizontal: 20,
+    lineHeight: 24,
+  },
+  encouragementText: {
+    fontSize: 16,
+    fontWeight: '500',
+    textAlign: 'center',
+    marginTop: 10,
+    paddingHorizontal: 20,
   },
   // Explanation styles
   explanationContainer: {

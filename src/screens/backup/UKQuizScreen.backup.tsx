@@ -68,8 +68,18 @@ const UKQuizScreen = () => {
             Score: {score}/{questions.length} ({percentage.toFixed(1)}%)
           </Text>
           <Text style={[styles.passFailText, passed ? styles.passedText : styles.failedText]}>
-            {passed ? 'PASSED!' : 'FAILED'}
+            {passed ? 'PASSED! ✅' : 'FAILED ❌'}
           </Text>
+          {passed && (
+            <Text style={[styles.congratsText, styles.passedText]}>
+              🎉 Congratulations! {mode === 'mock' ? 'You\'re ready for the real UK citizenship test!' : 'You\'ve mastered this UK module!'}
+            </Text>
+          )}
+          {!passed && (
+            <Text style={[styles.encouragementText, styles.failedText]}>
+              You need 75% to pass. Keep practicing! 💪
+            </Text>
+          )}
           
           <Text style={styles.reviewTitle}>Review Your Answers:</Text>
           {questions.map((question, index) => (
@@ -277,6 +287,23 @@ const styles = StyleSheet.create({
   },
   failedText: {
     color: '#c0392b',
+  },
+  congratsText: {
+    fontSize: 18,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 10,
+    paddingHorizontal: 20,
+    lineHeight: 24,
+  },
+  encouragementText: {
+    fontSize: 16,
+    fontWeight: '500',
+    textAlign: 'center',
+    marginTop: 10,
+    marginBottom: 10,
+    paddingHorizontal: 20,
   },
   reviewTitle: {
     fontSize: 20,

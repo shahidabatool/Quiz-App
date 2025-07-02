@@ -14,9 +14,20 @@ export default function ResultsScreen({ route }: any) {
   const passed = percentage >= 75;
 
   const getResultMessage = () => {
-    if (percentage >= 80) return 'Excellent!';
-    if (percentage >= 60) return 'Good job!';
-    return 'Keep practicing!';
+    if (passed) {
+      return 'Congratulations! 🎉 You passed!';
+    }
+    return 'Keep practicing! You need 75% to pass.';
+  };
+
+  const getPassMessage = () => {
+    if (!passed) return null;
+    if (mode === 'mock') {
+      return '🌟 Excellent work! You\'re ready for the real citizenship test!';
+    } else if (mode === 'quiz') {
+      return '🎯 Well done! You\'ve mastered this material!';
+    }
+    return '🏆 Great job! You\'ve successfully completed this module!';
   };
 
   return (
@@ -34,9 +45,14 @@ export default function ResultsScreen({ route }: any) {
           </Text>
           <Text style={[styles.percentage, { color: theme.colors.primary }]}>{percentage.toFixed(0)}%</Text>
           <Text style={[styles.message, { color: passed ? theme.colors.success : theme.colors.error, fontWeight: 'bold' }]}> 
-            {passed ? 'Passed' : 'Failed'}
+            {passed ? 'PASSED! ✅' : 'FAILED ❌'}
           </Text>
           <Text style={[styles.message, { color: theme.colors.textSecondary }]}>{getResultMessage()}</Text>
+          {passed && (
+            <Text style={[styles.congratsMessage, { color: theme.colors.success, fontWeight: '600', marginTop: 10, textAlign: 'center' }]}>
+              {getPassMessage()}
+            </Text>
+          )}
         </View>
         {questions && userAnswers && (
           <View style={{ width: '100%' }}>
@@ -157,6 +173,13 @@ const styles = StyleSheet.create({
   message: {
     fontSize: 24,
     fontWeight: '500',
+  },
+  congratsMessage: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginTop: 10,
+    paddingHorizontal: 20,
+    lineHeight: 24,
   },
   reviewTitle: {
     fontSize: 20,

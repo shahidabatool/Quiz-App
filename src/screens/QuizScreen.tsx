@@ -16,7 +16,30 @@ import FuturisticButton from '../components/FuturisticButton';
 import { loadCanadaQuestions, getRandomQuestions } from '../utils/questionUtils';
 import { ukQuestions, getRandomUKQuestions } from '../data/uk-questions';
 
+
+
 const { width, height } = Dimensions.get('window');
+
+// SIMPLE Fisher-Yates shuffle - ensures perfect random distribution and NO duplicates within session
+const getRandomUniqueQuestions = (allQuestions: Question[], count: number): Question[] => {
+  if (allQuestions.length === 0) return [];
+  
+  // Create a copy to avoid mutating original array
+  const questionsCopy = [...allQuestions];
+  
+  // Fisher-Yates shuffle algorithm for true randomness
+  for (let i = questionsCopy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [questionsCopy[i], questionsCopy[j]] = [questionsCopy[j], questionsCopy[i]];
+  }
+  
+  // Return the first 'count' questions (guaranteed unique since we shuffled the entire array)
+  const selectedQuestions = questionsCopy.slice(0, Math.min(count, questionsCopy.length));
+  
+  console.log(`🎯 Selected ${selectedQuestions.length} randomly shuffled questions from ${allQuestions.length} total`);
+  
+  return selectedQuestions;
+};
 
 interface Question {
   id: string;
@@ -54,9 +77,9 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
     if (country === 'canada') {
       switch (mode) {
         case 'mock':
-          return 'Canada Mock Test';
+          return 'Canada 45 Minute Mock Test';
         case 'quiz':
-          return 'Canada Quiz';
+          return 'Canada 45 Minute Quiz';
         case 'practice':
           return chapterName ? `Canada Practice: ${chapterName}` : 'Canada Practice';
         default:
@@ -93,33 +116,33 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
           
           let allCanadaQuestions: Question[] = [];
           
-          // Extract all questions from all chapters
+          // Extract all questions from all chapters with truly unique IDs
           canadaData.chapters.forEach((chapter, chapterIndex) => {
             console.log(`📖 Processing chapter ${chapterIndex + 1}: ${chapter.chapterName} (${chapter.questions.length} questions)`);
-            allCanadaQuestions.push(...chapter.questions.map(q => ({
-              id: q.id.toString(),
-              moduleId: chapter.chapterName,
-              question: q.question,
-              answers: q.options,
-              options: q.options,
-              correctAnswer: q.correct_answer,
-              explanation: q.explanation
-            })));
+            chapter.questions.forEach((q: any, qIndex: number) => {
+              allCanadaQuestions.push({
+                id: `canada_${chapterIndex}_${qIndex}`, // Unique ID: canada_chapterIndex_questionIndex
+                moduleId: chapter.chapterName,
+                question: q.question,
+                answers: q.options,
+                options: q.options,
+                correctAnswer: q.correct_answer,
+                explanation: q.explanation
+              });
+            });
           });
 
           console.log(`✅ Total questions loaded: ${allCanadaQuestions.length}`);
 
           if (mode === 'mock') {
-            // Random 20 questions for mock test
-            const shuffled = [...allCanadaQuestions].sort(() => Math.random() - 0.5);
-            const selectedQuestions = shuffled.slice(0, 20);
-            console.log(`🎯 Mock test: Selected ${selectedQuestions.length} questions`);
+            // Get 20 randomly shuffled unique questions for mock test
+            const selectedQuestions = getRandomUniqueQuestions(allCanadaQuestions, 20);
+            console.log(`🎯 Mock test: Selected ${selectedQuestions.length} unique questions`);
             setQuestions(selectedQuestions);
           } else if (mode === 'quiz') {
-            // For quiz mode, use random 20 questions
-            const shuffled = [...allCanadaQuestions].sort(() => Math.random() - 0.5);
-            const selectedQuestions = shuffled.slice(0, 20);
-            console.log(`✍️ Quiz: Selected ${selectedQuestions.length} questions`);
+            // Get 20 randomly shuffled unique questions for quiz
+            const selectedQuestions = getRandomUniqueQuestions(allCanadaQuestions, 20);
+            console.log(`✍️ Quiz: Selected ${selectedQuestions.length} unique questions`);
             setQuestions(selectedQuestions);
           }
         } else {
@@ -131,7 +154,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
         }
       } catch (error) {
         console.error('❌ Error loading questions:', error);
-        Alert.alert('Error', `Failed to load questions: ${error.message}`);
+        Alert.alert('Error', `Failed to load questions: ${error instanceof Error ? error.message : 'Unknown error'}`);
       } finally {
         setIsLoading(false);
       }
@@ -144,8 +167,15 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
   const [showResults, setShowResults] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(30 * 60); // 30 minutes for mock test
-  const [isTimerRunning, setIsTimerRunning] = useState(isMockTest);
+  // Set timer based on country and mode - 45 minutes for Canada quiz and mock test, 30 minutes for others
+  const getInitialTime = () => {
+    if (country === 'canada' && (mode === 'mock' || mode === 'quiz')) {
+      return 45 * 60; // 45 minutes for Canada quiz and mock test
+    }
+    return 30 * 60; // 30 minutes for other tests
+  };
+  const [timeLeft, setTimeLeft] = useState(getInitialTime());
+  const [isTimerRunning, setIsTimerRunning] = useState(isMockTest || (country === 'canada' && mode === 'quiz'));
 
   // Animation values
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -437,6 +467,21 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
               <Text style={[styles.scorePercentage, { color: theme.colors.neonGreen }]}>
                 {score.percentage}%
               </Text>
+              <Text style={[styles.passFailText, { 
+                color: score.percentage >= 75 ? theme.colors.neonGreen : theme.colors.error 
+              }]}>
+                {score.percentage >= 75 ? 'PASSED! ✅' : 'FAILED ❌'}
+              </Text>
+              {score.percentage >= 75 && (
+                <Text style={[styles.congratsText, { color: theme.colors.neonGreen }]}>
+                  🎉 Congratulations! {isMockTest ? 'You\'re ready for the real Canada citizenship test!' : 'You\'ve mastered this Canada module!'}
+                </Text>
+              )}
+              {score.percentage < 75 && (
+                <Text style={[styles.encouragementText, { color: theme.colors.textSecondary }]}>
+                  You need 75% to pass. Keep practicing! 💪
+                </Text>
+              )}
             </View>
 
             {/* Progress bar */}
@@ -636,8 +681,8 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
           />
         </View>
 
-        {/* Timer for mock test */}
-        {isMockTest && (
+        {/* Timer for Canada quiz and mock test, and other mock tests */}
+        {(isMockTest || (country === 'canada' && mode === 'quiz')) && (
           <View style={styles.timerContainer}>
             <Text style={[styles.timerLabel, { color: theme.colors.textSecondary }]}>
               TIME REMAINING
@@ -763,7 +808,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
           />
         </View>
 
-        {/* Finish Quiz Button for Mock Test */}
+                {/* Finish Quiz Button for Mock Test */}
         {isMockTest && (
           <View style={styles.finishContainer}>
             <FuturisticButton
@@ -774,7 +819,10 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
             />
           </View>
         )}
-      </ScrollView>
+
+
+ 
+        </ScrollView>
     </View>
   );
 };
@@ -942,6 +990,28 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '700',
     letterSpacing: 1,
+  },
+  passFailText: {
+    fontSize: 20,
+    fontWeight: '700',
+    letterSpacing: 1,
+    textAlign: 'center',
+    marginTop: 15,
+  },
+  congratsText: {
+    fontSize: 16,
+    fontWeight: '600',
+    textAlign: 'center',
+    marginTop: 10,
+    paddingHorizontal: 20,
+    lineHeight: 22,
+  },
+  encouragementText: {
+    fontSize: 14,
+    fontWeight: '500',
+    textAlign: 'center',
+    marginTop: 8,
+    paddingHorizontal: 20,
   },
   scoreProgressBar: {
     height: 8,
