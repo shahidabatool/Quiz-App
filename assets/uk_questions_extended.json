@@ -9,10 +9,10 @@
             "id": 1,
             "question": "What is the fundamental principle of British democracy?",
             "options": [
-              "Parliamentary sovereignty",
-              "Royal authority",
               "Local government control",
-              "European Union law"
+              "Parliamentary sovereignty",
+              "European Union law",
+              "Royal authority"
             ],
             "correct_answer": "Parliamentary sovereignty",
             "explanation": "Parliamentary sovereignty is the fundamental principle of British democracy, meaning Parliament has the ultimate authority to make and change laws."
@@ -21,10 +21,10 @@
             "id": 2,
             "question": "Which document established the principle of rule of law in England?",
             "options": [
+              "The European Convention",
               "The Magna Carta",
               "The Bill of Rights",
-              "The Human Rights Act",
-              "The European Convention"
+              "The Human Rights Act"
             ],
             "correct_answer": "The Magna Carta",
             "explanation": "The Magna Carta, signed in 1215, established the principle of rule of law and limited the power of the monarch."
@@ -33,10 +33,10 @@
             "id": 3,
             "question": "What are the fundamental British values?",
             "options": [
-              "Democracy, rule of law, individual liberty, mutual respect",
-              "Monarchy, aristocracy, democracy, republic",
               "Socialism, capitalism, communism, democracy",
-              "Religion, politics, economics, culture"
+              "Democracy, rule of law, individual liberty, mutual respect",
+              "Religion, politics, economics, culture",
+              "Monarchy, aristocracy, democracy, republic"
             ],
             "correct_answer": "Democracy, rule of law, individual liberty, mutual respect",
             "explanation": "The fundamental British values are democracy, the rule of law, individual liberty, and mutual respect and tolerance of those with different faiths and beliefs."
@@ -45,9 +45,9 @@
             "id": 4,
             "question": "What is the role of the monarch in the UK today?",
             "options": [
-              "To make laws",
-              "To govern the country",
               "To be a ceremonial head of state",
+              "To govern the country",
+              "To make laws",
               "To control the military"
             ],
             "correct_answer": "To be a ceremonial head of state",
@@ -57,184 +57,549 @@
             "id": 5,
             "question": "What is meant by 'individual liberty' in British values?",
             "options": [
-              "Freedom to break the law",
-              "Freedom within the law",
               "Freedom from all rules",
-              "Freedom to ignore others"
+              "Freedom within the law",
+              "Freedom to ignore others",
+              "Freedom to break the law"
             ],
             "correct_answer": "Freedom within the law",
             "explanation": "Individual liberty means freedom within the law, where people can live their lives as they wish, provided they do not break the law."
           },
           {
+            "id": 6,
+            "question": "What are the five fundamental principles of British life?",
+            "options": [
+              "Monarchy, Parliament, religion, education, work",
+              "Order, tradition, respect, duty, service",
+              "Freedom, equality, justice, peace, prosperity",
+              "Democracy, rule of law, individual liberty, tolerance of different faiths and beliefs, participation in community life"
+            ],
+            "correct_answer": "Democracy, rule of law, individual liberty, tolerance of different faiths and beliefs, participation in community life",
+            "explanation": "These five principles form the foundation of British society and are fundamental values that all residents should respect and support."
+          },
+          {
+            "id": 7,
+            "question": "What pledge do new citizens make during the citizenship ceremony?",
+            "options": [
+              "'I will defend Britain against all enemies and uphold the monarchy.'",
+              "'I pledge allegiance to the Crown and promise to serve the Queen.'",
+              "'I will give my loyalty to the United Kingdom and respect its rights and freedoms. I will uphold its democratic values. I will observe its laws faithfully and fulfil my duties and obligations as a British citizen.'",
+              "'I promise to be a good citizen and pay my taxes.'"
+            ],
+            "correct_answer": "'I will give my loyalty to the United Kingdom and respect its rights and freedoms. I will uphold its democratic values. I will observe its laws faithfully and fulfil my duties and obligations as a British citizen.'",
+            "explanation": "This is the official pledge that all new citizens make during their citizenship ceremony to uphold British values and fulfill their obligations."
+          },
+          {
+            "id": 8,
+            "question": "How many questions are in the Life in the UK test?",
+            "options": [
+              "20 questions",
+              "25 questions",
+              "24 questions",
+              "30 questions"
+            ],
+            "correct_answer": "24 questions",
+            "explanation": "The Life in the UK test consists of 24 questions about important aspects of life in the UK, drawn from all parts of the handbook."
+          },
+          {
+            "id": 9,
+            "question": "What level of English is required for the Life in the UK test?",
+            "options": [
+              "ESOL Entry Level 3",
+              "ESOL Entry Level 2",
+              "ESOL Entry Level 1",
+              "Advanced English"
+            ],
+            "correct_answer": "ESOL Entry Level 3",
+            "explanation": "The questions are written to require an understanding of English at ESOL Entry Level 3, so there is no need to take a separate English language test."
+          },
+          {
+            "id": 10,
+            "question": "Which languages can the Life in the UK test be taken in?",
+            "options": [
+              "English or Welsh only",
+              "Any European language",
+              "English, Welsh, or Scottish Gaelic",
+              "English only"
+            ],
+            "correct_answer": "English, Welsh, or Scottish Gaelic",
+            "explanation": "The Life in the UK test is usually taken in English, although special arrangements can be made if you wish to take it in Welsh or Scottish Gaelic."
+          },
+          {
+            "id": 11,
+            "question": "What should you do to become a permanent resident of the UK?",
+            "options": [
+              "Learn to drive",
+              "Respect and obey the law",
+              "Join a political party",
+              "Pay taxes regularly"
+            ],
+            "correct_answer": "Respect and obey the law",
+            "explanation": "If you wish to be a permanent resident or citizen of the UK, you should respect and obey the law, among other responsibilities."
+          },
+          {
+            "id": 12,
+            "question": "How many test centres are there approximately for the Life in the UK test?",
+            "options": [
+              "About 80",
+              "About 60",
+              "About 100",
+              "About 30"
+            ],
+            "correct_answer": "About 60",
+            "explanation": "There are about 60 test centres around the UK where you can take the Life in the UK test."
+          },
+          {
+            "id": 13,
+            "question": "What must you take with you to the Life in the UK test?",
+            "options": [
+              "Identification and proof of address",
+              "A dictionary",
+              "A calculator",
+              "A mobile phone"
+            ],
+            "correct_answer": "Identification and proof of address",
+            "explanation": "You will need to take some identification and proof of your address with you to the test. If you don't take these, you will not be able to take the test."
+          },
+          {
+            "id": 14,
+            "question": "What is the purpose of the citizenship ceremony pledge?",
+            "options": [
+              "To uphold British values and fulfill obligations",
+              "To register for taxes",
+              "To show respect for the Queen",
+              "To test your English"
+            ],
+            "correct_answer": "To uphold British values and fulfill obligations",
+            "explanation": "New citizens pledge to uphold democratic values, observe laws faithfully and fulfill duties and obligations as a British citizen."
+          },
+          {
+            "id": 15,
+            "question": "What does Britain offer in return for residents' responsibilities?",
+            "options": [
+              "Free housing and education",
+              "Freedom of belief, speech, and from unfair discrimination",
+              "Free healthcare only",
+              "Guaranteed employment"
+            ],
+            "correct_answer": "Freedom of belief, speech, and from unfair discrimination",
+            "explanation": "In return for responsibilities, the UK offers freedom of belief and religion, freedom of speech, freedom from unfair discrimination, a right to a fair trial, and a right to join in the election of a government."
+          },
+          {
+            "id": 16,
+            "question": "What are the Channel Islands and the Isle of Man called?",
+            "options": [
+              "Independent countries",
+              "English counties",
+              "British territories",
+              "Crown dependencies"
+            ],
+            "correct_answer": "Crown dependencies",
+            "explanation": "The Channel Islands and the Isle of Man are closely linked with the UK but are not part of it. They have their own governments and are called 'Crown dependencies'."
+          },
+          {
+            "id": 17,
+            "question": "What is the name of the process that removed many Scottish people from their land?",
+            "options": [
+              "Clan Removals",
+              "Highland Evictions",
+              "Scottish Exodus",
+              "Highland Clearances"
+            ],
+            "correct_answer": "Highland Clearances",
+            "explanation": "The Highland Clearances was a process where Scottish landlords destroyed individual small farms (crofts) to make space for large flocks of sheep and cattle."
+          },
+          {
+            "id": 18,
+            "question": "What was the period from 1455 called when families fought for the English throne?",
+            "options": [
+              "The Wars of the Roses",
+              "The English Civil War",
+              "The Norman Conquest",
+              "The Hundred Years War"
+            ],
+            "correct_answer": "The Wars of the Roses",
+            "explanation": "The Wars of the Roses was a civil war fought between the supporters of the House of Lancaster and the House of York to decide who should be king of England."
+          },
+          {
+            "id": 19,
+            "question": "What was the plague that killed one third of England's population called?",
+            "options": [
+              "The Spanish Flu",
+              "The Black Death",
+              "The Great Plague",
+              "The White Death"
+            ],
+            "correct_answer": "The Black Death",
+            "explanation": "In 1348, a disease known as the Black Death came to Britain. One third of the population of England died and a similar proportion in Scotland and Wales."
+          },
+          {
+            "id": 20,
+            "question": "Which wall was built by the Romans to keep out the Picts?",
+            "options": [
+              "Antonine Wall",
+              "Offa's Dyke",
+              "Hadrian's Wall",
+              "The Great Wall"
+            ],
+            "correct_answer": "Hadrian's Wall",
+            "explanation": "The Emperor Hadrian built a wall in the north of England to keep out the Picts (ancestors of the Scottish people). Parts of Hadrian's Wall can still be seen today."
+          },
+          {
+            "id": 21,
+            "question": "What is the UK's official religion?",
+            "options": [
+              "Presbyterian Church",
+              "Roman Catholic Church",
+              "Church of England",
+              "No official religion"
+            ],
+            "correct_answer": "Church of England",
+            "explanation": "The Church of England is the official religion of the UK, with the monarch as its head."
+          },
+          {
+            "id": 22,
+            "question": "Which of these is a fundamental British value?",
+            "options": [
+              "Conformity",
+              "State control",
+              "Individual liberty",
+              "Religious uniformity"
+            ],
+            "correct_answer": "Individual liberty",
+            "explanation": "Individual liberty is one of the fundamental British values, allowing people to live their lives as they wish within the law."
+          },
+          {
+            "id": 23,
+            "question": "What is the population of the UK approximately?",
+            "options": [
+              "100 million",
+              "50 million",
+              "80 million",
+              "67 million"
+            ],
+            "correct_answer": "67 million",
+            "explanation": "The UK has a population of approximately 67 million people."
+          },
+          {
+            "id": 24,
+            "question": "What is the main language spoken in the UK?",
+            "options": [
+              "English",
+              "Irish",
+              "Welsh",
+              "Scottish Gaelic"
+            ],
+            "correct_answer": "English",
+            "explanation": "English is the main language spoken in the UK, though other languages are also spoken in different regions."
+          },
+          {
+            "id": 25,
+            "question": "What is the currency of the UK?",
+            "options": [
+              "Euro",
+              "Pound Sterling",
+              "Dollar",
+              "Yen"
+            ],
+            "correct_answer": "Pound Sterling",
+            "explanation": "The currency of the UK is the Pound Sterling (£)."
+          },
+          {
             "id": 26,
+            "question": "What did the Beveridge Report aim to fight against?",
+            "options": [
+              "Hunger, Illness, Corruption, Violence and Despair",
+              "Discrimination, Inequality, Injustice, Oppression and Exploitation",
+              "Want, Disease, Ignorance, Squalor and Idleness",
+              "Poverty, War, Crime, Unemployment and Homelessness"
+            ],
+            "correct_answer": "Want, Disease, Ignorance, Squalor and Idleness",
+            "explanation": "The Beveridge Report recommended fighting the five 'Giant Evils' of Want, Disease, Ignorance, Squalor and Idleness, providing the basis for the modern welfare state."
+          },
+          {
+            "id": 27,
+            "question": "Who invented the World Wide Web?",
+            "options": [
+              "James Watt",
+              "Sir Tim Berners-Lee",
+              "Alexander Fleming",
+              "Alan Turing"
+            ],
+            "correct_answer": "Sir Tim Berners-Lee",
+            "explanation": "Sir Tim Berners-Lee, a British inventor, invented the World Wide Web. Information was first successfully transferred via the web on 25 December 1990."
+          },
+          {
+            "id": 28,
+            "question": "Which British scientist co-discovered the structure of DNA?",
+            "options": [
+              "Isaac Newton",
+              "Francis Crick",
+              "Stephen Hawking",
+              "Charles Darwin"
+            ],
+            "correct_answer": "Francis Crick",
+            "explanation": "Francis Crick was one of the British scientists awarded the Nobel Prize for discovering the structure of the DNA molecule in 1953 through work at British universities."
+          },
+          {
+            "id": 29,
+            "question": "Which British invention was developed by John Logie Baird in the 1920s?",
+            "options": [
+              "Computer",
+              "Telephone",
+              "Television",
+              "Radio"
+            ],
+            "correct_answer": "Television",
+            "explanation": "The television was developed by Scotsman John Logie Baird in the 1920s. In 1932 he made the first television broadcast between London and Glasgow."
+          },
+          {
+            "id": 30,
+            "question": "What did Sir Frank Whittle develop in the 1930s?",
+            "options": [
+              "Hovercraft",
+              "Jet engine",
+              "Computer",
+              "Radar"
+            ],
+            "correct_answer": "Jet engine",
+            "explanation": "The jet engine was developed in Britain in the 1930s by Sir Frank Whittle, a British Royal Air Force engineer Officer."
+          },
+          {
+            "id": 31,
+            "question": "When was the world's first 'test-tube baby' born in Britain?",
+            "options": [
+              "1976",
+              "1978",
+              "1980",
+              "1975"
+            ],
+            "correct_answer": "1978",
+            "explanation": "The world's first 'test-tube baby' was born in Oldham, Lancashire in 1978. IVF therapy was pioneered in Britain by Sir Robert Edwards and Patrick Steptoe."
+          },
+          {
+            "id": 32,
+            "question": "Who developed the supersonic passenger aircraft Concorde?",
+            "options": [
+              "Britain and Germany",
+              "Britain only",
+              "Britain and USA",
+              "Britain and France"
+            ],
+            "correct_answer": "Britain and France",
+            "explanation": "Britain and France developed Concorde, the world's only supersonic passenger aircraft. It first flew in 1969 and began carrying passengers in 1976."
+          },
+          {
+            "id": 33,
+            "question": "What was the Magna Carta designed to establish?",
+            "options": [
+              "That even the king was subject to the law",
+              "Democratic elections",
+              "Parliamentary sovereignty",
+              "Religious freedom"
+            ],
+            "correct_answer": "That even the king was subject to the law",
+            "explanation": "The Magna Carta established the idea that even the king was subject to the law. It protected the rights of the nobility and restricted the king's power."
+          },
+          {
+            "id": 34,
+            "question": "Which document became law in 1679 to prevent unlawful imprisonment?",
+            "options": [
+              "Reform Act",
+              "Bill of Rights",
+              "Magna Carta",
+              "Habeas Corpus Act"
+            ],
+            "correct_answer": "Habeas Corpus Act",
+            "explanation": "The Habeas Corpus Act became law in 1679. It guaranteed that no one could be held prisoner unlawfully and every prisoner has a right to a court hearing."
+          },
+          {
+            "id": 35,
+            "question": "What was the name given to the supporters of women's right to vote?",
+            "options": [
+              "Chartists",
+              "Reformists",
+              "Activists",
+              "Suffragettes"
+            ],
+            "correct_answer": "Suffragettes",
+            "explanation": "Women who campaigned for greater rights and the right to vote formed the women's suffrage movement and became known as 'suffragettes'."
+          }
+        ]
+      },
+      {
+        "chapterName": "What is the UK?",
+        "questions": [
+          {
+            "id": 36,
             "question": "What is the highest mountain in the UK?",
             "options": [
-              "Ben Nevis",
+              "Ben Macdui",
               "Snowdon",
               "Scafell Pike",
-              "Ben Macdui"
+              "Ben Nevis"
             ],
             "correct_answer": "Ben Nevis",
             "explanation": "Ben Nevis in Scotland is the highest mountain in the UK at 1,345 metres."
           },
           {
-            "id": 27,
+            "id": 37,
             "question": "What is the longest river in the UK?",
             "options": [
-              "River Thames",
               "River Severn",
+              "River Clyde",
               "River Trent",
-              "River Clyde"
+              "River Thames"
             ],
             "correct_answer": "River Severn",
             "explanation": "The River Severn is the longest river in the UK at 354 kilometres."
           },
           {
-            "id": 28,
+            "id": 38,
             "question": "What is the largest lake in the UK?",
             "options": [
-              "Loch Ness",
               "Loch Lomond",
-              "Windermere",
-              "Lough Neagh"
+              "Lough Neagh",
+              "Loch Ness",
+              "Windermere"
             ],
             "correct_answer": "Lough Neagh",
             "explanation": "Lough Neagh in Northern Ireland is the largest lake in the UK."
           },
           {
-            "id": 29,
+            "id": 39,
             "question": "What is the capital of England?",
             "options": [
-              "Manchester",
-              "Birmingham",
+              "Liverpool",
               "London",
-              "Liverpool"
+              "Birmingham",
+              "Manchester"
             ],
             "correct_answer": "London",
             "explanation": "London is the capital city of England and the UK."
           },
           {
-            "id": 30,
+            "id": 40,
             "question": "What is the national flower of England?",
             "options": [
-              "Rose",
               "Daffodil",
               "Thistle",
+              "Rose",
               "Shamrock"
             ],
             "correct_answer": "Rose",
             "explanation": "The rose is the national flower of England."
           },
           {
-            "id": 31,
+            "id": 41,
             "question": "What is the national dish of England?",
             "options": [
-              "Fish and chips",
               "Roast beef",
-              "Shepherd's pie",
-              "Bangers and mash"
+              "Bangers and mash",
+              "Fish and chips",
+              "Shepherd's pie"
             ],
             "correct_answer": "Fish and chips",
             "explanation": "Fish and chips is considered the national dish of England."
           },
           {
-            "id": 32,
+            "id": 42,
             "question": "When is St. Patrick's Day celebrated?",
             "options": [
-              "17 March",
               "23 April",
+              "25 December",
               "30 November",
-              "25 December"
+              "17 March"
             ],
             "correct_answer": "17 March",
             "explanation": "St. Patrick's Day is celebrated on 17 March, the feast day of St. Patrick."
           },
           {
-            "id": 33,
+            "id": 43,
             "question": "What is the national animal of Scotland?",
             "options": [
-              "Lion",
               "Unicorn",
+              "Deer",
               "Eagle",
-              "Deer"
+              "Lion"
             ],
             "correct_answer": "Unicorn",
             "explanation": "The unicorn is the national animal of Scotland."
           },
           {
-            "id": 34,
+            "id": 44,
             "question": "What is the national flower of Wales?",
             "options": [
-              "Daffodil",
-              "Rose",
               "Thistle",
-              "Shamrock"
+              "Shamrock",
+              "Rose",
+              "Daffodil"
             ],
             "correct_answer": "Daffodil",
             "explanation": "The daffodil is the national flower of Wales."
           },
           {
-            "id": 35,
+            "id": 45,
             "question": "What is the national flower of Scotland?",
             "options": [
-              "Thistle",
-              "Rose",
               "Daffodil",
+              "Rose",
+              "Thistle",
               "Shamrock"
             ],
             "correct_answer": "Thistle",
             "explanation": "The thistle is the national flower of Scotland."
           },
           {
-            "id": 36,
+            "id": 46,
             "question": "What is the national sport of England?",
             "options": [
-              "Football",
               "Cricket",
-              "Rugby",
-              "Tennis"
+              "Tennis",
+              "Football",
+              "Rugby"
             ],
             "correct_answer": "Cricket",
             "explanation": "Cricket is considered the national sport of England."
           },
           {
-            "id": 37,
+            "id": 47,
             "question": "Where is the Wimbledon tennis tournament held?",
             "options": [
-              "London",
-              "Manchester",
+              "Liverpool",
               "Birmingham",
-              "Liverpool"
+              "Manchester",
+              "London"
             ],
             "correct_answer": "London",
             "explanation": "The Wimbledon tennis tournament is held in London."
           },
           {
-            "id": 38,
+            "id": 48,
             "question": "What is the oldest football club in the world?",
             "options": [
-              "Manchester United",
               "Liverpool",
-              "Sheffield FC",
-              "Arsenal"
+              "Arsenal",
+              "Manchester United",
+              "Sheffield FC"
             ],
             "correct_answer": "Sheffield FC",
             "explanation": "Sheffield FC, founded in 1857, is the oldest football club in the world."
           },
           {
-            "id": 39,
+            "id": 49,
             "question": "What is the national sport of Scotland?",
             "options": [
-              "Football",
+              "Cricket",
               "Golf",
-              "Rugby",
-              "Cricket"
+              "Football",
+              "Rugby"
             ],
             "correct_answer": "Golf",
             "explanation": "Golf is considered the national sport of Scotland."
           },
           {
-            "id": 40,
+            "id": 50,
             "question": "Where is the home of golf?",
             "options": [
               "St Andrews",
@@ -246,31 +611,521 @@
             "explanation": "St Andrews in Scotland is known as the home of golf."
           },
           {
-            "id": 41,
+            "id": 51,
+            "question": "Which nations make up the United Kingdom?",
+            "options": [
+              "England and Scotland only",
+              "England, Wales, and Scotland only",
+              "England, Wales, Scotland, and Northern Ireland",
+              "Great Britain and Ireland"
+            ],
+            "correct_answer": "England, Wales, Scotland, and Northern Ireland",
+            "explanation": "The United Kingdom consists of four nations: England, Wales, Scotland, and Northern Ireland."
+          },
+          {
+            "id": 52,
+            "question": "When was the Act of Union between England and Scotland signed?",
+            "options": [
+              "1922",
+              "1800",
+              "1707",
+              "1066"
+            ],
+            "correct_answer": "1707",
+            "explanation": "The Act of Union between England and Scotland was signed in 1707, creating the Kingdom of Great Britain."
+          },
+          {
+            "id": 53,
+            "question": "What is the capital of Wales?",
+            "options": [
+              "Wrexham",
+              "Swansea",
+              "Newport",
+              "Cardiff"
+            ],
+            "correct_answer": "Cardiff",
+            "explanation": "Cardiff is the capital and largest city of Wales."
+          },
+          {
+            "id": 54,
+            "question": "What is the capital of Scotland?",
+            "options": [
+              "Dundee",
+              "Glasgow",
+              "Aberdeen",
+              "Edinburgh"
+            ],
+            "correct_answer": "Edinburgh",
+            "explanation": "Edinburgh is the capital city of Scotland."
+          },
+          {
+            "id": 55,
+            "question": "What is the capital of Northern Ireland?",
+            "options": [
+              "Derry",
+              "Belfast",
+              "Newry",
+              "Lisburn"
+            ],
+            "correct_answer": "Belfast",
+            "explanation": "Belfast is the capital and largest city of Northern Ireland."
+          },
+          {
+            "id": 56,
+            "question": "What does 'Great Britain' refer to?",
+            "options": [
+              "England and Scotland only",
+              "The entire UK including Northern Ireland",
+              "Just England",
+              "England, Scotland and Wales only"
+            ],
+            "correct_answer": "England, Scotland and Wales only",
+            "explanation": "'Great Britain' refers only to England, Scotland and Wales, not to Northern Ireland."
+          },
+          {
+            "id": 57,
+            "question": "What is the official name of the UK?",
+            "options": [
+              "The British Commonwealth",
+              "British Isles",
+              "The United Kingdom of Great Britain and Northern Ireland",
+              "Great Britain"
+            ],
+            "correct_answer": "The United Kingdom of Great Britain and Northern Ireland",
+            "explanation": "The official name of the country is the United Kingdom of Great Britain and Northern Ireland."
+          },
+          {
+            "id": 58,
+            "question": "Which parts of the UK have their own devolved parliaments or assemblies?",
+            "options": [
+              "All parts of the UK",
+              "Scotland, Wales and Northern Ireland",
+              "Only Scotland",
+              "Scotland and Wales only"
+            ],
+            "correct_answer": "Scotland, Wales and Northern Ireland",
+            "explanation": "Scotland, Wales and Northern Ireland have parliaments or assemblies of their own, with devolved powers in defined areas."
+          },
+          {
+            "id": 59,
+            "question": "Where is the UK Parliament located?",
+            "options": [
+              "Cardiff",
+              "Belfast",
+              "Westminster",
+              "Edinburgh"
+            ],
+            "correct_answer": "Westminster",
+            "explanation": "The UK is governed by the parliament sitting in Westminster."
+          }
+        ]
+      },
+      {
+        "chapterName": "A Long and Illustrious History",
+        "questions": [
+          {
+            "id": 60,
+            "question": "Who was the first Tudor monarch?",
+            "options": [
+              "Mary I",
+              "Henry VIII",
+              "Elizabeth I",
+              "Henry VII"
+            ],
+            "correct_answer": "Henry VII",
+            "explanation": "Henry VII was the first Tudor monarch, ruling from 1485 to 1509."
+          },
+          {
+            "id": 61,
+            "question": "What was the main cause of the English Civil War?",
+            "options": [
+              "Religious differences",
+              "Economic crisis",
+              "Foreign invasion",
+              "Conflict between Parliament and the Crown"
+            ],
+            "correct_answer": "Conflict between Parliament and the Crown",
+            "explanation": "The English Civil War was primarily caused by conflict between Parliament and the Crown over power and authority."
+          },
+          {
+            "id": 62,
+            "question": "When did the Industrial Revolution begin in Britain?",
+            "options": [
+              "Late 18th century",
+              "Early 20th century",
+              "Mid 19th century",
+              "Early 17th century"
+            ],
+            "correct_answer": "Late 18th century",
+            "explanation": "The Industrial Revolution began in Britain in the late 18th century, around 1760-1840."
+          },
+          {
+            "id": 63,
+            "question": "Who was the first female Prime Minister of the UK?",
+            "options": [
+              "Margaret Thatcher",
+              "Liz Truss",
+              "None of the above",
+              "Theresa May"
+            ],
+            "correct_answer": "Margaret Thatcher",
+            "explanation": "Margaret Thatcher was the first female Prime Minister of the UK, serving from 1979 to 1990."
+          },
+          {
+            "id": 64,
+            "question": "When did Britain join the European Economic Community (EEC)?",
+            "options": [
+              "2002",
+              "1973",
+              "1992",
+              "1957"
+            ],
+            "correct_answer": "1973",
+            "explanation": "Britain joined the European Economic Community (EEC) in 1973."
+          },
+          {
+            "id": 65,
+            "question": "Who was the first Prime Minister of Britain?",
+            "options": [
+              "Sir Robert Walpole",
+              "Tony Blair",
+              "Winston Churchill",
+              "Margaret Thatcher"
+            ],
+            "correct_answer": "Sir Robert Walpole",
+            "explanation": "Sir Robert Walpole was the first man to be called Prime Minister, serving from 1721 to 1742."
+          },
+          {
+            "id": 66,
+            "question": "In which year did the Battle of Culloden take place?",
+            "options": [
+              "1746",
+              "1745",
+              "1707",
+              "1689"
+            ],
+            "correct_answer": "1746",
+            "explanation": "The Battle of Culloden took place in 1746, where Charles Edward Stuart (Bonnie Prince Charlie) was defeated by George II's army."
+          },
+          {
+            "id": 67,
+            "question": "Who led the British fleet at the Battle of Trafalgar?",
+            "options": [
+              "Duke of Wellington",
+              "Sir Francis Drake",
+              "Captain Cook",
+              "Admiral Nelson"
+            ],
+            "correct_answer": "Admiral Nelson",
+            "explanation": "Admiral Nelson was in charge of the British fleet at Trafalgar in 1805 and was killed in the battle. Nelson's Column in Trafalgar Square commemorates him."
+          },
+          {
+            "id": 68,
+            "question": "Who wrote 'Auld Lang Syne'?",
+            "options": [
+              "William Shakespeare",
+              "Robert Burns",
+              "Dylan Thomas",
+              "Sir Walter Scott"
+            ],
+            "correct_answer": "Robert Burns",
+            "explanation": "Robert Burns, known in Scotland as 'The Bard', wrote Auld Lang Syne, which is sung when celebrating the New Year."
+          },
+          {
+            "id": 69,
+            "question": "In which year did the Norman Conquest take place?",
+            "options": [
+              "1068",
+              "1066",
+              "1065",
+              "1067"
+            ],
+            "correct_answer": "1066",
+            "explanation": "In 1066, William, the Duke of Normandy, defeated Harold at the Battle of Hastings and became king of England."
+          },
+          {
+            "id": 70,
+            "question": "Who was the famous queen who fought against the Romans?",
+            "options": [
+              "Boudicca",
+              "Victoria",
+              "Mary Stuart",
+              "Elizabeth I"
+            ],
+            "correct_answer": "Boudicca",
+            "explanation": "Boudicca was the queen of the Iceni who fought against the Romans. She is still remembered today and there is a statue of her on Westminster Bridge in London."
+          },
+          {
+            "id": 71,
+            "question": "Who was the first monarch of England to be called 'the Great'?",
+            "options": [
+              "Richard the Lionheart",
+              "Edward the Confessor",
+              "Alfred the Great",
+              "William the Conqueror"
+            ],
+            "correct_answer": "Alfred the Great",
+            "explanation": "Alfred the Great (871-899 AD) was King of Wessex and the first English king to be called 'the Great'. He defended England against Viking invasions and promoted learning."
+          },
+          {
+            "id": 72,
+            "question": "In which century did the Romans first invade Britain?",
+            "options": [
+              "1st century AD",
+              "2nd century BC",
+              "1st century BC",
+              "2nd century AD"
+            ],
+            "correct_answer": "1st century BC",
+            "explanation": "Julius Caesar first invaded Britain in 55 BC and again in 54 BC, though the permanent Roman occupation began under Emperor Claudius in 43 AD."
+          },
+          {
+            "id": 73,
+            "question": "What was the name of the plague that devastated Europe in the 14th century?",
+            "options": [
+              "The Great Plague",
+              "The Red Death",
+              "The Black Death",
+              "The White Death"
+            ],
+            "correct_answer": "The Black Death",
+            "explanation": "The Black Death (1347-1351) was a devastating plague that killed an estimated one-third of Europe's population, including England."
+          },
+          {
+            "id": 74,
+            "question": "Who was the English king defeated at the Battle of Hastings in 1066?",
+            "options": [
+              "King Alfred",
+              "King Edmund",
+              "King Harold",
+              "King Edward"
+            ],
+            "correct_answer": "King Harold",
+            "explanation": "King Harold II was defeated and killed at the Battle of Hastings in 1066 by William the Conqueror, marking the end of Anglo-Saxon rule."
+          },
+          {
+            "id": 75,
+            "question": "Which English king had six wives?",
+            "options": [
+              "Henry VII",
+              "Henry VI",
+              "Henry V",
+              "Henry VIII"
+            ],
+            "correct_answer": "Henry VIII",
+            "explanation": "Henry VIII (1509-1547) famously had six wives and broke with the Roman Catholic Church to establish the Church of England."
+          },
+          {
+            "id": 76,
+            "question": "What event in 1605 is remembered on November 5th each year?",
+            "options": [
+              "The Spanish Armada",
+              "The Battle of Agincourt",
+              "The Great Fire of London",
+              "The Gunpowder Plot"
+            ],
+            "correct_answer": "The Gunpowder Plot",
+            "explanation": "The Gunpowder Plot of 1605 was a failed attempt by Guy Fawkes and others to blow up Parliament and kill King James I. It's remembered on Bonfire Night."
+          },
+          {
+            "id": 77,
+            "question": "Which war lasted from 1337 to 1453 between England and France?",
+            "options": [
+              "The Hundred Years' War",
+              "The Napoleonic Wars",
+              "The Seven Years' War",
+              "The War of Spanish Succession"
+            ],
+            "correct_answer": "The Hundred Years' War",
+            "explanation": "The Hundred Years' War (1337-1453) was a series of conflicts between England and France, including famous battles like Agincourt."
+          },
+          {
+            "id": 78,
+            "question": "Who was the queen who ruled for only nine days in 1553?",
+            "options": [
+              "Elizabeth I",
+              "Mary Tudor",
+              "Anne Boleyn",
+              "Lady Jane Grey"
+            ],
+            "correct_answer": "Lady Jane Grey",
+            "explanation": "Lady Jane Grey was proclaimed queen for nine days in 1553 before being overthrown by Mary Tudor and later executed."
+          },
+          {
+            "id": 79,
+            "question": "In which year did the Great Fire of London occur?",
+            "options": [
+              "1666",
+              "1667",
+              "1665",
+              "1668"
+            ],
+            "correct_answer": "1666",
+            "explanation": "The Great Fire of London occurred in September 1666, destroying most of the medieval City of London and leading to Christopher Wren's rebuilding projects."
+          },
+          {
+            "id": 80,
+            "question": "Who designed St Paul's Cathedral after the Great Fire of London?",
+            "options": [
+              "Christopher Wren",
+              "John Vanbrugh",
+              "Nicholas Hawksmoor",
+              "Inigo Jones"
+            ],
+            "correct_answer": "Christopher Wren",
+            "explanation": "Sir Christopher Wren designed St Paul's Cathedral and many other churches in London after the Great Fire of 1666."
+          },
+          {
+            "id": 81,
+            "question": "Which battle in 1415 was a famous English victory during the Hundred Years' War?",
+            "options": [
+              "Battle of Crécy",
+              "Battle of Poitiers",
+              "Battle of Hastings",
+              "Battle of Agincourt"
+            ],
+            "correct_answer": "Battle of Agincourt",
+            "explanation": "The Battle of Agincourt (1415) was a famous English victory under Henry V against a much larger French army during the Hundred Years' War."
+          },
+          {
+            "id": 82,
+            "question": "What was the religious change introduced by the Reformation in England?",
+            "options": [
+              "Return to Roman Catholicism",
+              "Establishment of the Church of England",
+              "Introduction of Islam",
+              "Adoption of Protestant Lutheran beliefs"
+            ],
+            "correct_answer": "Establishment of the Church of England",
+            "explanation": "The English Reformation under Henry VIII led to the establishment of the Church of England, breaking away from papal authority."
+          },
+          {
+            "id": 83,
+            "question": "Who was the last Tudor monarch?",
+            "options": [
+              "Edward VI",
+              "Elizabeth I",
+              "Mary I",
+              "Henry VIII"
+            ],
+            "correct_answer": "Elizabeth I",
+            "explanation": "Elizabeth I (1558-1603) was the last Tudor monarch. She never married and had no children, so the crown passed to James I of the Stuart dynasty."
+          },
+          {
+            "id": 84,
+            "question": "Which famous English naval commander defeated the Spanish Armada in 1588?",
+            "options": [
+              "Francis Drake",
+              "Martin Frobisher",
+              "Walter Raleigh",
+              "John Hawkins"
+            ],
+            "correct_answer": "Francis Drake",
+            "explanation": "Sir Francis Drake played a key role in defeating the Spanish Armada in 1588, though it was a collective effort of the English navy."
+          },
+          {
+            "id": 85,
+            "question": "What was the main cause of the English Reformation?",
+            "options": [
+              "Religious differences with Rome",
+              "Foreign invasion",
+              "Economic problems",
+              "Henry VIII's desire for a male heir"
+            ],
+            "correct_answer": "Henry VIII's desire for a male heir",
+            "explanation": "Henry VIII's desire for a male heir and the Pope's refusal to annul his marriage to Catherine of Aragon led to the English Reformation."
+          },
+          {
+            "id": 86,
+            "question": "Which monarch restored the monarchy after the English Commonwealth?",
+            "options": [
+              "William III",
+              "James II",
+              "Charles II",
+              "Charles I"
+            ],
+            "correct_answer": "Charles II",
+            "explanation": "Charles II was restored to the throne in 1660 after the English Commonwealth period, ending the republic established after his father's execution."
+          },
+          {
+            "id": 87,
+            "question": "What was the Domesday Book?",
+            "options": [
+              "A religious text",
+              "A land survey ordered by William the Conqueror",
+              "A collection of laws",
+              "A chronicle of battles"
+            ],
+            "correct_answer": "A land survey ordered by William the Conqueror",
+            "explanation": "The Domesday Book (1086) was a comprehensive land survey ordered by William the Conqueror to record landholdings and wealth in England."
+          },
+          {
+            "id": 88,
+            "question": "Which event in 1688 brought William of Orange to the English throne?",
+            "options": [
+              "The English Civil War",
+              "The Glorious Revolution",
+              "The Jacobite Rising",
+              "The War of Spanish Succession"
+            ],
+            "correct_answer": "The Glorious Revolution",
+            "explanation": "The Glorious Revolution of 1688 was the overthrow of King James II by William of Orange and Mary, establishing parliamentary supremacy."
+          },
+          {
+            "id": 89,
+            "question": "Who was known as the 'Iron Lady'?",
+            "options": [
+              "Queen Elizabeth II",
+              "Elizabeth I",
+              "Margaret Thatcher",
+              "Queen Victoria"
+            ],
+            "correct_answer": "Margaret Thatcher",
+            "explanation": "Margaret Thatcher was known as the 'Iron Lady' due to her uncompromising political style during her time as Prime Minister (1979-1990)."
+          },
+          {
+            "id": 90,
+            "question": "Which Roman emperor ordered the building of a wall across northern England?",
+            "options": [
+              "Julius Caesar",
+              "Hadrian",
+              "Claudius",
+              "Antoninus Pius"
+            ],
+            "correct_answer": "Hadrian",
+            "explanation": "Emperor Hadrian ordered the construction of Hadrian's Wall (122 AD) to defend Roman Britain from Scottish tribes."
+          }
+        ]
+      },
+      {
+        "chapterName": "Modern, Thriving Society",
+        "questions": [
+          {
+            "id": 91,
             "question": "At what age do children start primary school in the UK?",
             "options": [
-              "4 years",
-              "5 years",
               "6 years",
-              "7 years"
+              "4 years",
+              "7 years",
+              "5 years"
             ],
             "correct_answer": "5 years",
             "explanation": "Children in the UK start primary school at the age of 5."
           },
           {
-            "id": 42,
+            "id": 92,
             "question": "What is the oldest university in the UK?",
             "options": [
               "Oxford",
-              "Cambridge",
+              "St Andrews",
               "Edinburgh",
-              "St Andrews"
+              "Cambridge"
             ],
             "correct_answer": "Oxford",
             "explanation": "The University of Oxford is the oldest university in the UK, founded in the 12th century."
           },
           {
-            "id": 43,
+            "id": 93,
             "question": "What is the second oldest university in the UK?",
             "options": [
               "Oxford",
@@ -282,47 +1137,47 @@
             "explanation": "The University of Cambridge is the second oldest university in the UK."
           },
           {
-            "id": 44,
+            "id": 94,
             "question": "What is the national curriculum?",
             "options": [
-              "A set of subjects and standards for primary and secondary schools",
               "A list of required books",
-              "A set of exams",
-              "A teaching method"
+              "A teaching method",
+              "A set of subjects and standards for primary and secondary schools",
+              "A set of exams"
             ],
             "correct_answer": "A set of subjects and standards for primary and secondary schools",
             "explanation": "The national curriculum is a set of subjects and standards for primary and secondary schools in England."
           },
           {
-            "id": 45,
+            "id": 95,
             "question": "What is GCSE?",
             "options": [
-              "General Certificate of Secondary Education",
               "General Certificate of School Education",
               "General Certificate of Standard Education",
+              "General Certificate of Secondary Education",
               "General Certificate of Senior Education"
             ],
             "correct_answer": "General Certificate of Secondary Education",
             "explanation": "GCSE stands for General Certificate of Secondary Education, taken by students aged 14-16."
           },
           {
-            "id": 46,
+            "id": 96,
             "question": "What does NHS stand for?",
             "options": [
-              "National Health Service",
               "National Hospital Service",
               "National Healthcare System",
-              "National Health System"
+              "National Health System",
+              "National Health Service"
             ],
             "correct_answer": "National Health Service",
             "explanation": "NHS stands for National Health Service, the publicly funded healthcare system in the UK."
           },
           {
-            "id": 47,
+            "id": 97,
             "question": "When was the NHS founded?",
             "options": [
-              "1948",
               "1939",
+              "1948",
               "1955",
               "1960"
             ],
@@ -330,235 +1185,64 @@
             "explanation": "The NHS was founded in 1948 by Aneurin Bevan."
           },
           {
-            "id": 48,
+            "id": 98,
             "question": "Is healthcare free in the UK?",
             "options": [
               "Yes, for all residents",
-              "No, everyone pays",
               "Only for children",
+              "No, everyone pays",
               "Only for the elderly"
             ],
             "correct_answer": "Yes, for all residents",
             "explanation": "Healthcare is free at the point of use for all UK residents through the NHS."
           },
           {
-            "id": 49,
+            "id": 99,
             "question": "What is the emergency phone number in the UK?",
             "options": [
-              "999",
               "911",
-              "112",
-              "000"
+              "999",
+              "000",
+              "112"
             ],
             "correct_answer": "999",
             "explanation": "999 is the emergency phone number in the UK for police, fire, and ambulance services."
           },
           {
-            "id": 50,
+            "id": 100,
             "question": "What is a GP?",
             "options": [
-              "General Practitioner",
+              "General Provider",
               "General Physician",
               "General Professional",
-              "General Provider"
+              "General Practitioner"
             ],
             "correct_answer": "General Practitioner",
             "explanation": "GP stands for General Practitioner, a doctor who provides primary healthcare."
-          }
-        ]
-      },
-      {
-        "chapterName": "What is the UK?",
-        "questions": [
-          {
-            "id": 6,
-            "question": "Which nations make up the United Kingdom?",
-            "options": [
-              "England, Wales, Scotland, and Northern Ireland",
-              "England, Wales, and Scotland only",
-              "Great Britain and Ireland",
-              "England and Scotland only"
-            ],
-            "correct_answer": "England, Wales, Scotland, and Northern Ireland",
-            "explanation": "The United Kingdom consists of four nations: England, Wales, Scotland, and Northern Ireland."
           },
           {
-            "id": 7,
-            "question": "When was the Act of Union between England and Scotland signed?",
+            "id": 101,
+            "question": "Who established the National Health Service (NHS)?",
             "options": [
-              "1707",
-              "1800",
-              "1922",
-              "1066"
+              "William Beveridge",
+              "Clement Attlee",
+              "Winston Churchill",
+              "Aneurin (Nye) Bevan"
             ],
-            "correct_answer": "1707",
-            "explanation": "The Act of Union between England and Scotland was signed in 1707, creating the Kingdom of Great Britain."
+            "correct_answer": "Aneurin (Nye) Bevan",
+            "explanation": "Aneurin (Nye) Bevan, the Minister for Health, led the establishment of the National Health Service (NHS) in 1948."
           },
           {
-            "id": 8,
-            "question": "What is the capital of Wales?",
+            "id": 102,
+            "question": "In which year was the NHS established?",
             "options": [
-              "Cardiff",
-              "Swansea",
-              "Newport",
-              "Wrexham"
+              "1945",
+              "1946",
+              "1948",
+              "1950"
             ],
-            "correct_answer": "Cardiff",
-            "explanation": "Cardiff is the capital and largest city of Wales."
-          },
-          {
-            "id": 9,
-            "question": "What is the capital of Scotland?",
-            "options": [
-              "Glasgow",
-              "Edinburgh",
-              "Aberdeen",
-              "Dundee"
-            ],
-            "correct_answer": "Edinburgh",
-            "explanation": "Edinburgh is the capital city of Scotland."
-          },
-          {
-            "id": 10,
-            "question": "What is the capital of Northern Ireland?",
-            "options": [
-              "Belfast",
-              "Derry",
-              "Lisburn",
-              "Newry"
-            ],
-            "correct_answer": "Belfast",
-            "explanation": "Belfast is the capital and largest city of Northern Ireland."
-          }
-        ]
-      },
-      {
-        "chapterName": "A Long and Illustrious History",
-        "questions": [
-          {
-            "id": 11,
-            "question": "Who was the first Tudor monarch?",
-            "options": [
-              "Henry VII",
-              "Henry VIII",
-              "Elizabeth I",
-              "Mary I"
-            ],
-            "correct_answer": "Henry VII",
-            "explanation": "Henry VII was the first Tudor monarch, ruling from 1485 to 1509."
-          },
-          {
-            "id": 12,
-            "question": "What was the main cause of the English Civil War?",
-            "options": [
-              "Conflict between Parliament and the Crown",
-              "Religious differences",
-              "Foreign invasion",
-              "Economic crisis"
-            ],
-            "correct_answer": "Conflict between Parliament and the Crown",
-            "explanation": "The English Civil War was primarily caused by conflict between Parliament and the Crown over power and authority."
-          },
-          {
-            "id": 13,
-            "question": "When did the Industrial Revolution begin in Britain?",
-            "options": [
-              "Late 18th century",
-              "Early 17th century",
-              "Mid 19th century",
-              "Early 20th century"
-            ],
-            "correct_answer": "Late 18th century",
-            "explanation": "The Industrial Revolution began in Britain in the late 18th century, around 1760-1840."
-          },
-          {
-            "id": 14,
-            "question": "Who was the first female Prime Minister of the UK?",
-            "options": [
-              "Margaret Thatcher",
-              "Theresa May",
-              "Liz Truss",
-              "None of the above"
-            ],
-            "correct_answer": "Margaret Thatcher",
-            "explanation": "Margaret Thatcher was the first female Prime Minister of the UK, serving from 1979 to 1990."
-          },
-          {
-            "id": 15,
-            "question": "When did Britain join the European Economic Community (EEC)?",
-            "options": [
-              "1973",
-              "1957",
-              "1992",
-              "2002"
-            ],
-            "correct_answer": "1973",
-            "explanation": "Britain joined the European Economic Community (EEC) in 1973."
-          }
-        ]
-      },
-      {
-        "chapterName": "Modern, Thriving Society",
-        "questions": [
-          {
-            "id": 16,
-            "question": "What is the UK's official religion?",
-            "options": [
-              "Church of England",
-              "Roman Catholic Church",
-              "Presbyterian Church",
-              "No official religion"
-            ],
-            "correct_answer": "Church of England",
-            "explanation": "The Church of England is the official religion of the UK, with the monarch as its head."
-          },
-          {
-            "id": 17,
-            "question": "Which of these is a fundamental British value?",
-            "options": [
-              "Individual liberty",
-              "Conformity",
-              "State control",
-              "Religious uniformity"
-            ],
-            "correct_answer": "Individual liberty",
-            "explanation": "Individual liberty is one of the fundamental British values, allowing people to live their lives as they wish within the law."
-          },
-          {
-            "id": 18,
-            "question": "What is the population of the UK approximately?",
-            "options": [
-              "67 million",
-              "50 million",
-              "80 million",
-              "100 million"
-            ],
-            "correct_answer": "67 million",
-            "explanation": "The UK has a population of approximately 67 million people."
-          },
-          {
-            "id": 19,
-            "question": "What is the main language spoken in the UK?",
-            "options": [
-              "English",
-              "Welsh",
-              "Scottish Gaelic",
-              "Irish"
-            ],
-            "correct_answer": "English",
-            "explanation": "English is the main language spoken in the UK, though other languages are also spoken in different regions."
-          },
-          {
-            "id": 20,
-            "question": "What is the currency of the UK?",
-            "options": [
-              "Pound Sterling",
-              "Euro",
-              "Dollar",
-              "Yen"
-            ],
-            "correct_answer": "Pound Sterling",
-            "explanation": "The currency of the UK is the Pound Sterling (£)."
+            "correct_answer": "1948",
+            "explanation": "The National Health Service was established in 1948, guaranteeing a minimum standard of health care for all, free at the point of use."
           }
         ]
       },
@@ -566,23 +1250,35 @@
         "chapterName": "The UK Government",
         "questions": [
           {
-            "id": 21,
+            "id": 103,
+            "question": "Who was the Prime Minister when the welfare state was introduced?",
+            "options": [
+              "Margaret Thatcher",
+              "Tony Blair",
+              "Clement Attlee",
+              "Winston Churchill"
+            ],
+            "correct_answer": "Clement Attlee",
+            "explanation": "Clement Attlee was Prime Minister from 1945 to 1951 and promised to introduce the welfare state outlined in the Beveridge Report."
+          },
+          {
+            "id": 104,
             "question": "How often must a general election be held in the UK?",
             "options": [
               "At least every 5 years",
               "At least every 4 years",
-              "At least every 3 years",
-              "At least every 7 years"
+              "At least every 7 years",
+              "At least every 3 years"
             ],
             "correct_answer": "At least every 5 years",
             "explanation": "A general election must be held at least every 5 years in the UK."
           },
           {
-            "id": 22,
+            "id": 105,
             "question": "What is the role of the House of Lords?",
             "options": [
-              "To examine and challenge the work of the government",
               "To represent local constituencies",
+              "To examine and challenge the work of the government",
               "To form the government",
               "To collect taxes"
             ],
@@ -590,40 +1286,112 @@
             "explanation": "The House of Lords examines and challenges the work of the government and reviews and amends bills."
           },
           {
-            "id": 23,
+            "id": 106,
             "question": "Who is the head of state in the UK?",
             "options": [
               "The Prime Minister",
+              "The Lord Chancellor",
               "The Monarch",
-              "The Speaker of the House",
-              "The Lord Chancellor"
+              "The Speaker of the House"
             ],
             "correct_answer": "The Monarch",
             "explanation": "The Monarch (currently King Charles III) is the head of state in the UK."
           },
           {
-            "id": 24,
+            "id": 107,
             "question": "What is the role of the Prime Minister?",
             "options": [
-              "Head of state",
-              "Head of government",
               "Head of the judiciary",
-              "Head of the military"
+              "Head of the military",
+              "Head of state",
+              "Head of government"
             ],
             "correct_answer": "Head of government",
             "explanation": "The Prime Minister is the head of government and leads the executive branch."
           },
           {
-            "id": 25,
+            "id": 108,
             "question": "How many Members of Parliament (MPs) are there in the House of Commons?",
             "options": [
+              "500",
               "650",
               "600",
-              "700",
-              "500"
+              "700"
             ],
             "correct_answer": "650",
             "explanation": "There are 650 Members of Parliament (MPs) in the House of Commons."
+          },
+          {
+            "id": 109,
+            "question": "What confirmed the rights of Parliament and limits of the monarch's power in 1689?",
+            "options": [
+              "The Magna Carta",
+              "The Reform Act",
+              "The Bill of Rights",
+              "The Human Rights Act"
+            ],
+            "correct_answer": "The Bill of Rights",
+            "explanation": "The Bill of Rights of 1689 confirmed the rights of Parliament and the limits of the king's power, establishing that the monarch could not raise taxes or administer justice without Parliament's agreement."
+          },
+          {
+            "id": 110,
+            "question": "What system of government does the UK have?",
+            "options": [
+              "Absolute monarchy",
+              "Constitutional monarchy",
+              "Republic",
+              "Federal system"
+            ],
+            "correct_answer": "Constitutional monarchy",
+            "explanation": "The UK has a constitutional monarchy where the monarch remains important but cannot insist on particular policies if Parliament does not agree."
+          },
+          {
+            "id": 111,
+            "question": "What are the two main political groups that developed in Parliament called?",
+            "options": [
+              "Labour and Conservative",
+              "Democrats and Republicans",
+              "Liberal and Conservative",
+              "Whigs and Tories"
+            ],
+            "correct_answer": "Whigs and Tories",
+            "explanation": "The Whigs and Tories were the two main groups in Parliament that developed after the Glorious Revolution. The modern Conservative Party is still sometimes referred to as the Tories."
+          },
+          {
+            "id": 112,
+            "question": "From what year were newspapers allowed to operate without a government licence?",
+            "options": [
+              "1701",
+              "1707",
+              "1695",
+              "1689"
+            ],
+            "correct_answer": "1695",
+            "explanation": "From 1695, newspapers were allowed to operate without a government licence, marking an important development in the free press."
+          },
+          {
+            "id": 113,
+            "question": "What does 'Habeas Corpus' mean in Latin?",
+            "options": [
+              "Innocent until proven guilty",
+              "You must present the person in court",
+              "Justice for all",
+              "You have the right"
+            ],
+            "correct_answer": "You must present the person in court",
+            "explanation": "Habeas corpus is Latin for 'you must present the person in court'. The Act guaranteed that no one could be held prisoner unlawfully."
+          },
+          {
+            "id": 114,
+            "question": "When did universal suffrage (voting rights for all adults) begin developing?",
+            "options": [
+              "After World War II",
+              "Early 19th century",
+              "18th century",
+              "Late 19th and early 20th centuries"
+            ],
+            "correct_answer": "Late 19th and early 20th centuries",
+            "explanation": "Universal suffrage (the right of every adult, male or female, to vote) followed in the late 19th and early 20th centuries, with women's suffrage movement being particularly important."
           }
         ]
       }

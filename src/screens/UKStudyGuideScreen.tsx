@@ -12,7 +12,7 @@ import '@react-pdf-viewer/zoom/lib/styles/index.css';
 import { theme } from '../theme';
 
 // Import the PDF file
-import UKGuidePDF from '../../assets/document.pdf';
+import UKGuidePDF from '../../assets/pdf guildline.pdf';
 
 export default function UKStudyGuideScreen() {
   const [error, setError] = useState<string | null>(null);

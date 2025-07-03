@@ -1,10 +1,44 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { useTheme } from '../theme/ThemeContext';
 import { lightTheme, darkTheme } from '../theme/theme';
 import { RootStackParamList } from '../types';
+
+// About Us Component 
+const AboutUsContent = ({ theme }: any) => (
+  <View style={[styles.aboutContainer, { backgroundColor: theme.colors.background }]}>
+    <Text style={[styles.aboutTitle, { color: theme.colors.text }]}>About GlobalCitizen Prep</Text>
+    
+    <Text style={[styles.aboutText, { color: theme.colors.textSecondary }]}>
+      Welcome to GlobalCitizen Prep, your trusted companion in preparing for the UK and Canada citizenship tests.
+    </Text>
+    
+    <Text style={[styles.aboutText, { color: theme.colors.textSecondary }]}>
+      Our mission is simple: to help you succeed by providing high-quality, accurate, and up-to-date practice tools that build your confidence and improve your performance on test day.
+    </Text>
+    
+    <Text style={[styles.aboutText, { color: theme.colors.textSecondary }]}>
+      Every question in the app is crafted using reliable sources, including official government materials and recognized study guides. We understand how important this milestone is, and we're here to make your preparation journey smoother and more effective.
+    </Text>
+    
+    <Text style={[styles.aboutSectionTitle, { color: theme.colors.primary }]}>What GlobalCitizen Prep Offers:</Text>
+    
+    <Text style={[styles.aboutFeature, { color: theme.colors.textSecondary }]}>🎯 Mock Test - Experience real exam conditions with timed, full-length simulations</Text>
+    <Text style={[styles.aboutFeature, { color: theme.colors.textSecondary }]}>✍️ Quiz Mode - Engage with bite-sized quizzes that offer instant, explained answers</Text>
+    <Text style={[styles.aboutFeature, { color: theme.colors.textSecondary }]}>📚 Chapterwise Practice - Study one topic at a time with structured questions</Text>
+    <Text style={[styles.aboutFeature, { color: theme.colors.textSecondary }]}>📖 Official Preparation Material - Access trusted PDF resources for full study</Text>
+    
+    <Text style={[styles.aboutClosing, { color: theme.colors.textSecondary }]}>
+      At GlobalCitizen Prep, we believe in making learning accessible, efficient, and motivating. Your success is our goal — and we're proud to be part of your path to citizenship.
+    </Text>
+    
+    <Text style={[styles.aboutThanks, { color: theme.colors.text }]}>
+      Thank you for choosing us. Your success is our priority.
+    </Text>
+  </View>
+);
 
 const modules = [
   {
@@ -122,8 +156,49 @@ type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
 
 export default function CanadianModulesScreen() {
   const navigation = useNavigation<NavigationProp>();
+  const route = useRoute();
   const { isDark } = useTheme();
   const theme = isDark ? darkTheme : lightTheme;
+  
+  // Check if we should show About Us content instead
+  const showAboutUs = (route.params as any)?.showAboutUs;
+  
+  // Update header title if showing About Us
+  React.useEffect(() => {
+    if (showAboutUs) {
+      navigation.setOptions({
+        title: 'About Us',
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: theme.colors.primary,
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      });
+    } else {
+      navigation.setOptions({
+        title: 'Canadian Citizenship',
+        headerShown: true,
+        headerStyle: {
+          backgroundColor: theme.colors.primary,
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      });
+    }
+  }, [showAboutUs, navigation, theme]);
+  
+  if (showAboutUs) {
+    return (
+      <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>
+        <AboutUsContent theme={theme} />
+      </ScrollView>
+    );
+  }
 
   return (
     <ScrollView style={[styles.container, { backgroundColor: theme.colors.background }]}>
@@ -244,5 +319,47 @@ const styles = StyleSheet.create({
   sectionDescription: {
     fontSize: 14,
     lineHeight: 20,
+  },
+  // About Us styles
+  aboutContainer: {
+    padding: 20,
+    paddingTop: 40,
+  },
+  aboutTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 30,
+  },
+  aboutText: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginBottom: 16,
+    textAlign: 'left',
+  },
+  aboutSectionTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 20,
+    marginBottom: 15,
+  },
+  aboutFeature: {
+    fontSize: 16,
+    lineHeight: 22,
+    marginBottom: 12,
+    paddingLeft: 10,
+  },
+  aboutClosing: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginTop: 20,
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  aboutThanks: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 20,
   },
 }); 

@@ -6,64 +6,44 @@ import {
   StyleSheet,
   ScrollView,
   Animated,
-  Dimensions,
   StatusBar,
 } from 'react-native';
 import { useTheme } from '../theme/ThemeContext';
 import { lightTheme, darkTheme } from '../theme/theme';
 import DarkModeToggle from '../components/DarkModeToggle';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../navigation';
 
-const { width, height } = Dimensions.get('window');
+type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
-const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
+interface Props {
+  navigation: HomeScreenNavigationProp;
+}
+
+const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const { isDark } = useTheme();
   const theme = isDark ? darkTheme : lightTheme;
 
-  // Animation values
   const fadeAnim = useRef(new Animated.Value(0)).current;
-  const slideAnim = useRef(new Animated.Value(50)).current;
   const scaleAnim = useRef(new Animated.Value(0.8)).current;
   const rotateAnim = useRef(new Animated.Value(0)).current;
-  const pulseAnim = useRef(new Animated.Value(1)).current;
-  const glowAnim = useRef(new Animated.Value(0)).current;
 
-  // Entrance animations
   useEffect(() => {
+    // Simple entrance animation
     Animated.parallel([
       Animated.timing(fadeAnim, {
         toValue: 1,
         duration: 1000,
         useNativeDriver: true,
       }),
-      Animated.timing(slideAnim, {
-        toValue: 0,
-        duration: 800,
-        useNativeDriver: true,
-      }),
       Animated.timing(scaleAnim, {
         toValue: 1,
-        duration: 600,
+        duration: 800,
         useNativeDriver: true,
       }),
     ]).start();
 
-    // Continuous animations
-    const pulse = Animated.loop(
-      Animated.sequence([
-        Animated.timing(pulseAnim, {
-          toValue: 1.05,
-          duration: 2000,
-          useNativeDriver: true,
-        }),
-        Animated.timing(pulseAnim, {
-          toValue: 1,
-          duration: 2000,
-          useNativeDriver: true,
-        }),
-      ])
-    );
-    pulse.start();
-
+    // Continuous rotation
     const rotate = Animated.loop(
       Animated.timing(rotateAnim, {
         toValue: 1,
@@ -73,27 +53,7 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     );
     rotate.start();
 
-    const glow = Animated.loop(
-      Animated.sequence([
-        Animated.timing(glowAnim, {
-          toValue: 1,
-          duration: 3000,
-          useNativeDriver: false,
-        }),
-        Animated.timing(glowAnim, {
-          toValue: 0,
-          duration: 3000,
-          useNativeDriver: false,
-        }),
-      ])
-    );
-    glow.start();
-
-    return () => {
-      pulse.stop();
-      rotate.stop();
-      glow.stop();
-    };
+    return () => rotate.stop();
   }, []);
 
   const rotateStyle = {
@@ -105,40 +65,21 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
     }],
   };
 
-  const glowStyle = {
-    shadowOpacity: glowAnim.interpolate({
-      inputRange: [0, 1],
-      outputRange: [0.3, 0.8],
-    }),
-    shadowRadius: glowAnim.interpolate({
-      inputRange: [0, 1],
-      outputRange: [10, 20],
-    }),
+  // SIMPLE NAVIGATION FUNCTIONS
+  const goToCanada = () => {
+    console.log('🇨🇦 Going to Canada!');
+    navigation.navigate('CanadianModules');
   };
 
-  const navigateToModule = (module: string) => {
-    console.log('🚀 Navigating to module:', module);
-    
-    Animated.sequence([
-      Animated.timing(scaleAnim, {
-        toValue: 0.95,
-        duration: 100,
-        useNativeDriver: true,
-      }),
-      Animated.timing(scaleAnim, {
-        toValue: 1,
-        duration: 100,
-        useNativeDriver: true,
-      }),
-    ]).start(() => {
-      if (module === 'canada') {
-        console.log('🇨🇦 Navigating to CanadianModules');
-        navigation.navigate('CanadianModules');
-      } else if (module === 'uk') {
-        console.log('🇬🇧 Navigating to UKCitizenship');
-        navigation.navigate('UKCitizenship');
-      }
-    });
+  const goToUK = () => {
+    console.log('🇬🇧 Going to UK!');
+    navigation.navigate('UKCitizenship');
+  };
+
+  const goToAboutUs = () => {
+    console.log('👥 Going to About Us!');
+    // HACK: Use working Canada navigation but with About Us flag
+    navigation.navigate('CanadianModules', { showAboutUs: true });
   };
 
   return (
@@ -148,131 +89,65 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
         backgroundColor={theme.colors.background}
       />
 
-      {/* Animated background elements */}
+      {/* Background Effects */}
       <View style={styles.backgroundContainer}>
-        <Animated.View
-          style={[
-            styles.backgroundCircle,
-            {
-              backgroundColor: theme.colors.neonPurple,
-              opacity: 0.1,
-            },
-            rotateStyle,
-          ]}
-        />
-        <Animated.View
-          style={[
-            styles.backgroundCircle2,
-            {
-              backgroundColor: theme.colors.neonBlue,
-              opacity: 0.1,
-            },
-            rotateStyle,
-          ]}
-        />
-        <Animated.View
-          style={[
-            styles.backgroundCircle3,
-            {
-              backgroundColor: theme.colors.neonGreen,
-              opacity: 0.1,
-            },
-            rotateStyle,
-          ]}
-        />
+        <Animated.View style={[
+          styles.backgroundCircle,
+          { backgroundColor: theme.colors.neonPurple, opacity: 0.1 },
+          rotateStyle,
+        ]} />
+        <Animated.View style={[
+          styles.backgroundCircle2,
+          { backgroundColor: theme.colors.neonBlue, opacity: 0.1 },
+          rotateStyle,
+        ]} />
       </View>
 
-      <ScrollView
-        contentContainerStyle={styles.scrollContent}
-        showsVerticalScrollIndicator={false}
-      >
-        <Animated.View
-          style={[
-            styles.header,
-            {
-              opacity: fadeAnim,
-              transform: [
-                { translateY: slideAnim },
-                { scale: scaleAnim },
-              ],
-            },
-          ]}
-        >
-          {/* Futuristic title with glow effect */}
-          <Animated.View
-            style={[
-              styles.titleContainer,
-              glowStyle,
-            ]}
-          >
+      <ScrollView contentContainerStyle={styles.scrollContent}>
+        {/* Header */}
+        <Animated.View style={[
+          styles.header,
+          { opacity: fadeAnim, transform: [{ scale: scaleAnim }] }
+        ]}>
+          <View style={styles.titleContainer}>
             <Text style={[styles.title, { color: theme.colors.text }]}>
-              CITIZENSHIP
+              GLOBALCITIZEN PREP
             </Text>
             <Text style={[styles.subtitle, { color: theme.colors.neonPurple }]}>
               QUIZ MASTER
             </Text>
             <View style={styles.titleUnderline} />
-          </Animated.View>
-
+          </View>
           <Text style={[styles.description, { color: theme.colors.textSecondary }]}>
             Master your citizenship test with our advanced AI-powered learning system
           </Text>
         </Animated.View>
 
         {/* Dark Mode Toggle */}
-        <Animated.View
-          style={[
-            styles.toggleContainer,
-            {
-              opacity: fadeAnim,
-              transform: [{ translateY: slideAnim }],
-            },
-          ]}
-        >
+        <Animated.View style={[
+          styles.toggleContainer,
+          { opacity: fadeAnim }
+        ]}>
           <DarkModeToggle />
         </Animated.View>
 
-        {/* Module Selection Cards */}
-        <View style={styles.modulesContainer}>
-          {/* Canada Module */}
-          <Animated.View
-            style={[
-              styles.moduleCard,
-              {
-                backgroundColor: theme.colors.card,
-                borderColor: theme.colors.neonBlue,
-                opacity: fadeAnim,
-                transform: [
-                  { translateY: slideAnim },
-                  { scale: pulseAnim },
-                ],
-              },
-              glowStyle,
-            ]}
-          >
-            <TouchableOpacity
-              style={[styles.moduleButton, { zIndex: 10 }]}
-              onPress={() => {
-                console.log('🇨🇦 Canada card pressed!');
-                navigateToModule('canada');
-              }}
-              activeOpacity={0.8}
-            >
-              {/* Futuristic icon container */}
+        {/* Module Cards */}
+        <Animated.View style={[
+          styles.modulesContainer,
+          { opacity: fadeAnim }
+        ]}>
+          {/* Canada Card */}
+          <View style={[
+            styles.moduleCard,
+            { backgroundColor: theme.colors.card, borderColor: theme.colors.neonBlue }
+          ]}>
+            <TouchableOpacity style={styles.moduleButton} onPress={goToCanada}>
               <View style={[
                 styles.iconContainer,
-                {
-                  backgroundColor: theme.colors.neonBlue,
-                  borderColor: theme.colors.neonGreen,
-                }
+                { backgroundColor: theme.colors.neonBlue }
               ]}>
                 <Text style={styles.moduleIcon}>🇨🇦</Text>
-                <View style={[
-                  styles.iconGlow,
-                  { backgroundColor: theme.colors.neonBlue }
-                ]} />
               </View>
-
               <View style={styles.moduleContent}>
                 <Text style={[styles.moduleTitle, { color: theme.colors.text }]}>
                   CANADIAN CITIZENSHIP
@@ -280,81 +155,33 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
                 <Text style={[styles.moduleSubtitle, { color: theme.colors.textSecondary }]}>
                   Practice tests, study guides, and mock exams
                 </Text>
-                
-                {/* Futuristic progress indicator */}
                 <View style={styles.progressContainer}>
-                  <View style={[
-                    styles.progressBar,
-                    { backgroundColor: theme.colors.backgroundSecondary }
-                  ]}>
-                    <View style={[
-                      styles.progressFill,
-                      { backgroundColor: theme.colors.neonBlue }
-                    ]} />
+                  <View style={[styles.progressBar, { backgroundColor: theme.colors.backgroundSecondary }]}>
+                    <View style={[styles.progressFill, { backgroundColor: theme.colors.neonBlue }]} />
                   </View>
                   <Text style={[styles.progressText, { color: theme.colors.neonBlue }]}>
                     READY
                   </Text>
                 </View>
               </View>
-
-              {/* Arrow indicator */}
-              <View style={[
-                styles.arrowContainer,
-                { borderColor: theme.colors.neonBlue }
-              ]}>
-                <Text style={[styles.arrow, { color: theme.colors.neonBlue }]}>
-                  →
-                </Text>
+              <View style={[styles.arrowContainer, { borderColor: theme.colors.neonBlue }]}>
+                <Text style={[styles.arrow, { color: theme.colors.neonBlue }]}>→</Text>
               </View>
             </TouchableOpacity>
+          </View>
 
-            {/* Cyberpunk border effect */}
-            <View style={[
-              styles.cyberBorder,
-              { borderColor: theme.colors.neonPink }
-            ]} />
-          </Animated.View>
-
-          {/* UK Module */}
-          <Animated.View
-            style={[
-              styles.moduleCard,
-              {
-                backgroundColor: theme.colors.card,
-                borderColor: theme.colors.neonPurple,
-                opacity: fadeAnim,
-                transform: [
-                  { translateY: slideAnim },
-                  { scale: pulseAnim },
-                ],
-              },
-              glowStyle,
-            ]}
-          >
-            <TouchableOpacity
-              style={[styles.moduleButton, { zIndex: 10 }]}
-              onPress={() => {
-                console.log('🇬🇧 UK card pressed!');
-                navigateToModule('uk');
-              }}
-              activeOpacity={0.8}
-            >
-              {/* Futuristic icon container */}
+          {/* UK Card */}
+          <View style={[
+            styles.moduleCard,
+            { backgroundColor: theme.colors.card, borderColor: theme.colors.neonPurple }
+          ]}>
+            <TouchableOpacity style={styles.moduleButton} onPress={goToUK}>
               <View style={[
                 styles.iconContainer,
-                {
-                  backgroundColor: theme.colors.neonPurple,
-                  borderColor: theme.colors.neonGreen,
-                }
+                { backgroundColor: theme.colors.neonPurple }
               ]}>
                 <Text style={styles.moduleIcon}>🇬🇧</Text>
-                <View style={[
-                  styles.iconGlow,
-                  { backgroundColor: theme.colors.neonPurple }
-                ]} />
               </View>
-
               <View style={styles.moduleContent}>
                 <Text style={[styles.moduleTitle, { color: theme.colors.text }]}>
                   UK CITIZENSHIP
@@ -362,60 +189,61 @@ const HomeScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
                 <Text style={[styles.moduleSubtitle, { color: theme.colors.textSecondary }]}>
                   Life in the UK test preparation
                 </Text>
-                
-                {/* Futuristic progress indicator */}
                 <View style={styles.progressContainer}>
-                  <View style={[
-                    styles.progressBar,
-                    { backgroundColor: theme.colors.backgroundSecondary }
-                  ]}>
-                    <View style={[
-                      styles.progressFill,
-                      { backgroundColor: theme.colors.neonPurple }
-                    ]} />
+                  <View style={[styles.progressBar, { backgroundColor: theme.colors.backgroundSecondary }]}>
+                    <View style={[styles.progressFill, { backgroundColor: theme.colors.neonPurple }]} />
                   </View>
                   <Text style={[styles.progressText, { color: theme.colors.neonPurple }]}>
                     READY
                   </Text>
                 </View>
               </View>
-
-              {/* Arrow indicator */}
-              <View style={[
-                styles.arrowContainer,
-                { borderColor: theme.colors.neonPurple }
-              ]}>
-                <Text style={[styles.arrow, { color: theme.colors.neonPurple }]}>
-                  →
-                </Text>
+              <View style={[styles.arrowContainer, { borderColor: theme.colors.neonPurple }]}>
+                <Text style={[styles.arrow, { color: theme.colors.neonPurple }]}>→</Text>
               </View>
             </TouchableOpacity>
+          </View>
 
-            {/* Cyberpunk border effect */}
-            <View style={[
-              styles.cyberBorder,
-              { borderColor: theme.colors.neonPink }
-            ]} />
-          </Animated.View>
-        </View>
 
-        {/* Floating particles */}
-        <View style={styles.particlesContainer}>
-          {[...Array(12)].map((_, i) => (
-            <Animated.View
-              key={i}
-              style={[
-                styles.particle,
-                {
-                  backgroundColor: theme.colors.neonGreen,
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                  transform: [{ scale: pulseAnim }],
-                }
-              ]}
-            />
-          ))}
-        </View>
+
+          {/* About Us Card - Original Design */}
+          <View style={[
+            styles.moduleCard,
+            { backgroundColor: theme.colors.card, borderColor: theme.colors.neonGreen }
+          ]}>
+            <TouchableOpacity 
+              style={[styles.moduleButton, { zIndex: 10, elevation: 10 }]} 
+              onPress={goToAboutUs}
+              activeOpacity={0.7}
+            >
+              <View style={[
+                styles.iconContainer,
+                { backgroundColor: theme.colors.neonGreen }
+              ]}>
+                <Text style={styles.moduleIcon}>👥</Text>
+              </View>
+              <View style={styles.moduleContent}>
+                <Text style={[styles.moduleTitle, { color: theme.colors.text }]}>
+                  ABOUT US
+                </Text>
+                <Text style={[styles.moduleSubtitle, { color: theme.colors.textSecondary }]}>
+                  Learn more about GlobalCitizen Prep
+                </Text>
+                <View style={styles.progressContainer}>
+                  <View style={[styles.progressBar, { backgroundColor: theme.colors.backgroundSecondary }]}>
+                    <View style={[styles.progressFill, { backgroundColor: theme.colors.neonGreen }]} />
+                  </View>
+                  <Text style={[styles.progressText, { color: theme.colors.neonGreen }]}>
+                    INFO
+                  </Text>
+                </View>
+              </View>
+              <View style={[styles.arrowContainer, { borderColor: theme.colors.neonGreen }]}>
+                <Text style={[styles.arrow, { color: theme.colors.neonGreen }]}>→</Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+        </Animated.View>
       </ScrollView>
     </View>
   );
@@ -449,14 +277,6 @@ const styles = StyleSheet.create({
     bottom: -50,
     left: -50,
   },
-  backgroundCircle3: {
-    position: 'absolute',
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    top: '50%',
-    right: -75,
-  },
   scrollContent: {
     flexGrow: 1,
     padding: 20,
@@ -468,12 +288,7 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     alignItems: 'center',
-    marginBottom: 10,
-    shadowColor: '#8b5cf6',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 15,
-    elevation: 10,
+    marginBottom: 15,
   },
   title: {
     fontSize: 36,
@@ -499,7 +314,6 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 16,
     textAlign: 'center',
-    marginTop: 15,
     lineHeight: 24,
     maxWidth: 300,
   },
@@ -524,7 +338,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
-    position: 'relative',
   },
   iconContainer: {
     width: 60,
@@ -532,25 +345,15 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     alignItems: 'center',
     justifyContent: 'center',
-    borderWidth: 2,
     marginRight: 20,
-    position: 'relative',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
     shadowRadius: 8,
     elevation: 5,
   },
-  iconGlow: {
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    borderRadius: 30,
-    opacity: 0.3,
-  },
   moduleIcon: {
     fontSize: 24,
-    zIndex: 1,
   },
   moduleContent: {
     flex: 1,
@@ -596,31 +399,6 @@ const styles = StyleSheet.create({
   arrow: {
     fontSize: 18,
     fontWeight: 'bold',
-  },
-  cyberBorder: {
-    position: 'absolute',
-    top: -2,
-    left: -2,
-    right: -2,
-    bottom: -2,
-    borderRadius: 22,
-    borderWidth: 1,
-    opacity: 0.6,
-  },
-  particlesContainer: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    pointerEvents: 'none',
-  },
-  particle: {
-    position: 'absolute',
-    width: 3,
-    height: 3,
-    borderRadius: 1.5,
-    opacity: 0.6,
   },
 });
 

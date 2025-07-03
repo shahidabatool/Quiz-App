@@ -26,6 +26,61 @@
               "The European Convention"
             ],
             "correct_answer": "The Magna Carta"
+          },
+          {
+            "id": 3,
+            "question": "What are the five fundamental principles of British life?",
+            "options": [
+              "Democracy, rule of law, individual liberty, tolerance of different faiths and beliefs, participation in community life",
+              "Monarchy, Parliament, religion, education, work",
+              "Freedom, equality, justice, peace, prosperity",
+              "Order, tradition, respect, duty, service"
+            ],
+            "correct_answer": "Democracy, rule of law, individual liberty, tolerance of different faiths and beliefs, participation in community life"
+          },
+          {
+            "id": 4,
+            "question": "What pledge do new citizens make during the citizenship ceremony?",
+            "options": [
+              "'I will give my loyalty to the United Kingdom and respect its rights and freedoms. I will uphold its democratic values. I will observe its laws faithfully and fulfil my duties and obligations as a British citizen.'",
+              "'I pledge allegiance to the Crown and promise to serve the Queen.'",
+              "'I will defend Britain against all enemies and uphold the monarchy.'",
+              "'I promise to be a good citizen and pay my taxes.'"
+            ],
+            "correct_answer": "'I will give my loyalty to the United Kingdom and respect its rights and freedoms. I will uphold its democratic values. I will observe its laws faithfully and fulfil my duties and obligations as a British citizen.'"
+          },
+          {
+            "id": 5,
+            "question": "How many questions are in the Life in the UK test?",
+            "options": [
+              "24 questions",
+              "20 questions",
+              "30 questions",
+              "25 questions"
+            ],
+            "correct_answer": "24 questions"
+          },
+          {
+            "id": 6,
+            "question": "What level of English is required for the Life in the UK test?",
+            "options": [
+              "ESOL Entry Level 3",
+              "ESOL Entry Level 1",
+              "ESOL Entry Level 2",
+              "Advanced English"
+            ],
+            "correct_answer": "ESOL Entry Level 3"
+          },
+          {
+            "id": 7,
+            "question": "Which languages can the Life in the UK test be taken in?",
+            "options": [
+              "English, Welsh, or Scottish Gaelic",
+              "English only",
+              "English or Welsh only",
+              "Any European language"
+            ],
+            "correct_answer": "English, Welsh, or Scottish Gaelic"
           }
         ]
       },
@@ -33,7 +88,7 @@
         "chapterName": "What is the UK?",
         "questions": [
           {
-            "id": 3,
+            "id": 8,
             "question": "Which nations make up the United Kingdom?",
             "options": [
               "England, Wales, Scotland, and Northern Ireland",
@@ -44,7 +99,7 @@
             "correct_answer": "England, Wales, Scotland, and Northern Ireland"
           },
           {
-            "id": 4,
+            "id": 9,
             "question": "When was the Act of Union between England and Scotland signed?",
             "options": [
               "1707",
@@ -53,6 +108,61 @@
               "1066"
             ],
             "correct_answer": "1707"
+          },
+          {
+            "id": 10,
+            "question": "What is the official name of the UK?",
+            "options": [
+              "The United Kingdom of Great Britain and Northern Ireland",
+              "Great Britain",
+              "The British Isles",
+              "The United Kingdom of England, Scotland, Wales and Ireland"
+            ],
+            "correct_answer": "The United Kingdom of Great Britain and Northern Ireland"
+          },
+          {
+            "id": 11,
+            "question": "What does 'Great Britain' refer to?",
+            "options": [
+              "England, Scotland and Wales only",
+              "The entire UK including Northern Ireland",
+              "England only",
+              "Scotland and Wales only"
+            ],
+            "correct_answer": "England, Scotland and Wales only"
+          },
+          {
+            "id": 12,
+            "question": "What are the Channel Islands and the Isle of Man called?",
+            "options": [
+              "Crown dependencies",
+              "British overseas territories",
+              "Independent countries",
+              "English counties"
+            ],
+            "correct_answer": "Crown dependencies"
+          },
+          {
+            "id": 13,
+            "question": "Where is the UK Parliament located?",
+            "options": [
+              "Westminster",
+              "Edinburgh",
+              "Cardiff",
+              "Belfast"
+            ],
+            "correct_answer": "Westminster"
+          },
+          {
+            "id": 14,
+            "question": "Which parts of the UK have their own devolved parliaments or assemblies?",
+            "options": [
+              "Scotland, Wales and Northern Ireland",
+              "Scotland and Wales only",
+              "Northern Ireland only",
+              "All parts of the UK"
+            ],
+            "correct_answer": "Scotland, Wales and Northern Ireland"
           }
         ]
       },
@@ -60,7 +170,7 @@
         "chapterName": "A Long and Illustrious History",
         "questions": [
           {
-            "id": 5,
+            "id": 15,
             "question": "Who was the first Tudor monarch?",
             "options": [
               "Henry VII",
@@ -71,7 +181,7 @@
             "correct_answer": "Henry VII"
           },
           {
-            "id": 6,
+            "id": 16,
             "question": "What was the main cause of the English Civil War?",
             "options": [
               "Conflict between Parliament and the Crown",
@@ -80,6 +190,61 @@
               "Economic crisis"
             ],
             "correct_answer": "Conflict between Parliament and the Crown"
+          },
+          {
+            "id": 17,
+            "question": "Who was the first Prime Minister of Britain?",
+            "options": [
+              "Sir Robert Walpole",
+              "Winston Churchill",
+              "Margaret Thatcher",
+              "Tony Blair"
+            ],
+            "correct_answer": "Sir Robert Walpole"
+          },
+          {
+            "id": 18,
+            "question": "In which year did the Battle of Culloden take place?",
+            "options": [
+              "1746",
+              "1745",
+              "1707",
+              "1689"
+            ],
+            "correct_answer": "1746"
+          },
+          {
+            "id": 19,
+            "question": "Who led the British fleet at the Battle of Trafalgar?",
+            "options": [
+              "Admiral Nelson",
+              "Duke of Wellington",
+              "Sir Francis Drake",
+              "Captain Cook"
+            ],
+            "correct_answer": "Admiral Nelson"
+          },
+          {
+            "id": 20,
+            "question": "What is the name of the process that removed many Scottish people from their land?",
+            "options": [
+              "Highland Clearances",
+              "Scottish Exodus",
+              "Clan Removals",
+              "Highland Evictions"
+            ],
+            "correct_answer": "Highland Clearances"
+          },
+          {
+            "id": 21,
+            "question": "Who wrote 'Auld Lang Syne'?",
+            "options": [
+              "Robert Burns",
+              "Sir Walter Scott",
+              "Dylan Thomas",
+              "William Shakespeare"
+            ],
+            "correct_answer": "Robert Burns"
           }
         ]
       },
@@ -87,7 +252,7 @@
         "chapterName": "Modern, Thriving Society",
         "questions": [
           {
-            "id": 7,
+            "id": 22,
             "question": "What is the UK's official religion?",
             "options": [
               "Church of England",
@@ -98,7 +263,7 @@
             "correct_answer": "Church of England"
           },
           {
-            "id": 8,
+            "id": 23,
             "question": "Which of these is a fundamental British value?",
             "options": [
               "Individual liberty",
@@ -107,6 +272,61 @@
               "Religious uniformity"
             ],
             "correct_answer": "Individual liberty"
+          },
+          {
+            "id": 24,
+            "question": "Who established the National Health Service (NHS)?",
+            "options": [
+              "Aneurin (Nye) Bevan",
+              "Clement Attlee",
+              "William Beveridge",
+              "Winston Churchill"
+            ],
+            "correct_answer": "Aneurin (Nye) Bevan"
+          },
+          {
+            "id": 25,
+            "question": "In which year was the NHS established?",
+            "options": [
+              "1948",
+              "1945",
+              "1950",
+              "1946"
+            ],
+            "correct_answer": "1948"
+          },
+          {
+            "id": 26,
+            "question": "What did the Beveridge Report aim to fight against?",
+            "options": [
+              "Want, Disease, Ignorance, Squalor and Idleness",
+              "Poverty, War, Crime, Unemployment and Homelessness",
+              "Hunger, Illness, Corruption, Violence and Despair",
+              "Discrimination, Inequality, Injustice, Oppression and Exploitation"
+            ],
+            "correct_answer": "Want, Disease, Ignorance, Squalor and Idleness"
+          },
+          {
+            "id": 27,
+            "question": "Who invented the World Wide Web?",
+            "options": [
+              "Sir Tim Berners-Lee",
+              "Alan Turing",
+              "James Watt",
+              "Alexander Fleming"
+            ],
+            "correct_answer": "Sir Tim Berners-Lee"
+          },
+          {
+            "id": 28,
+            "question": "Which British scientist co-discovered the structure of DNA?",
+            "options": [
+              "Francis Crick",
+              "Stephen Hawking",
+              "Charles Darwin",
+              "Isaac Newton"
+            ],
+            "correct_answer": "Francis Crick"
           }
         ]
       },
@@ -114,7 +334,7 @@
         "chapterName": "The UK Government",
         "questions": [
           {
-            "id": 9,
+            "id": 29,
             "question": "How often must a general election be held in the UK?",
             "options": [
               "At least every 5 years",
@@ -125,7 +345,7 @@
             "correct_answer": "At least every 5 years"
           },
           {
-            "id": 10,
+            "id": 30,
             "question": "What is the role of the House of Lords?",
             "options": [
               "To examine and challenge the work of the government",
@@ -134,6 +354,61 @@
               "To collect taxes"
             ],
             "correct_answer": "To examine and challenge the work of the government"
+          },
+          {
+            "id": 31,
+            "question": "What confirmed the rights of Parliament and limits of the monarch's power in 1689?",
+            "options": [
+              "The Bill of Rights",
+              "The Magna Carta",
+              "The Human Rights Act",
+              "The Reform Act"
+            ],
+            "correct_answer": "The Bill of Rights"
+          },
+          {
+            "id": 32,
+            "question": "What system of government does the UK have?",
+            "options": [
+              "Constitutional monarchy",
+              "Absolute monarchy",
+              "Republic",
+              "Federal system"
+            ],
+            "correct_answer": "Constitutional monarchy"
+          },
+          {
+            "id": 33,
+            "question": "Who was the first woman Prime Minister of the UK?",
+            "options": [
+              "Margaret Thatcher",
+              "Theresa May",
+              "Elizabeth I",
+              "Victoria"
+            ],
+            "correct_answer": "Margaret Thatcher"
+          },
+          {
+            "id": 34,
+            "question": "What are the two main political groups that developed in Parliament called?",
+            "options": [
+              "Whigs and Tories",
+              "Labour and Conservative",
+              "Liberal and Conservative",
+              "Democrats and Republicans"
+            ],
+            "correct_answer": "Whigs and Tories"
+          },
+          {
+            "id": 35,
+            "question": "When did the UK join the European Economic Community (EEC)?",
+            "options": [
+              "1973",
+              "1975",
+              "1957",
+              "1979"
+            ],
+            "correct_answer": "1973"
           }
         ]
       }

@@ -42,7 +42,7 @@ export default function UKCitizenshipScreen() {
           </View>
           <View style={styles.textContainer}>
             <Text style={[styles.sectionTitle, { color: theme.colors.text }]}>Mock Test</Text>
-            <Text style={[styles.sectionDescription, { color: theme.colors.textSecondary }]}>30-minute simulation of the real citizenship test</Text>
+            <Text style={[styles.sectionDescription, { color: theme.colors.textSecondary }]}>45-minute simulation of the real citizenship test</Text>
           </View>
         </TouchableOpacity>
 
