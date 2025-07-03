@@ -206,8 +206,18 @@ const UKQuizScreen = () => {
   // Calculate progress percentage
   const progressPercentage = (currentQuestionIndex / quizQuestions.length) * 100;
 
+  // Calculate score based on all user answers
+  const calculateScore = (answers: string[]) => {
+    let totalScore = 0;
+    answers.forEach((answer, index) => {
+      if (answer && answer === quizQuestions[index]?.correct_answer) {
+        totalScore += 1;
+      }
+    });
+    return totalScore;
+  };
+
   const handleAnswerSelect = (answer: string) => {
-    if (selectedAnswer !== null) return;
     setSelectedAnswer(answer);
     
     // Store user's answer
@@ -215,17 +225,13 @@ const UKQuizScreen = () => {
     newUserAnswers[currentQuestionIndex] = answer;
     setUserAnswers(newUserAnswers);
     
-    // For mock mode, don't show explanation immediately
-    if (mode === 'mock') {
-      if (answer === quizQuestions[currentQuestionIndex].correct_answer) {
-        setScore(score + 1);
-      }
-    } else {
-      // For practice mode, show explanation immediately
+    // Recalculate score after answer change
+    const newScore = calculateScore(newUserAnswers);
+    setScore(newScore);
+    
+    // For practice mode, show explanation immediately
+    if (mode !== 'mock') {
       setShowExplanation(true);
-      if (answer === quizQuestions[currentQuestionIndex].correct_answer) {
-        setScore(score + 1);
-      }
     }
   };
 
@@ -463,6 +469,70 @@ const UKQuizScreen = () => {
         )}
       </Animated.View>
 
+      {/* Question Overview Panel - Only for Mock Tests */}
+      {mode === 'mock' && (
+        <View style={[styles.questionOverviewPanel, { backgroundColor: theme.colors.card, borderColor: theme.colors.neonBlue }]}>
+          <Text style={[styles.overviewTitle, { color: theme.colors.text }]}>Question Overview</Text>
+          <Text style={[styles.overviewHint, { color: theme.colors.textSecondary }]}>
+            💡 Tap any question number to jump to it and change your answer
+          </Text>
+          <ScrollView 
+            horizontal 
+            showsHorizontalScrollIndicator={false}
+            style={styles.questionNumbers}
+            contentContainerStyle={styles.questionNumbersContent}
+          >
+            {quizQuestions.map((_, index) => {
+              const isAnswered = userAnswers[index] !== undefined && userAnswers[index] !== '';
+              const isCurrent = index === currentQuestionIndex;
+              
+              return (
+                <TouchableOpacity
+                  key={index}
+                  style={[
+                    styles.questionNumber,
+                    { backgroundColor: theme.colors.backgroundSecondary },
+                    isAnswered && { backgroundColor: theme.colors.neonBlue },
+                    isCurrent && { 
+                      backgroundColor: theme.colors.neonPurple,
+                      borderColor: theme.colors.neonGreen,
+                      borderWidth: 2
+                    },
+                  ]}
+                  onPress={() => {
+                    setCurrentQuestionIndex(index);
+                    setSelectedAnswer(userAnswers[index] || null);
+                    setShowExplanation(false);
+                  }}
+                >
+                  <Text style={[
+                    styles.questionNumberText,
+                    { color: theme.colors.text },
+                    (isAnswered || isCurrent) && { color: '#fff' }
+                  ]}>
+                    {index + 1}
+                  </Text>
+                </TouchableOpacity>
+              );
+            })}
+          </ScrollView>
+          <View style={styles.legendContainer}>
+            <View style={styles.legendItem}>
+              <View style={[styles.legendDot, { backgroundColor: theme.colors.neonBlue }]} />
+              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Answered</Text>
+            </View>
+            <View style={styles.legendItem}>
+              <View style={[styles.legendDot, { backgroundColor: theme.colors.neonPurple, borderColor: theme.colors.neonGreen, borderWidth: 2 }]} />
+              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Current</Text>
+            </View>
+            <View style={styles.legendItem}>
+              <View style={[styles.legendDot, { backgroundColor: theme.colors.backgroundSecondary }]} />
+              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Not answered</Text>
+            </View>
+          </View>
+        </View>
+      )}
+
       {/* Question Content */}
       <ScrollView
         contentContainerStyle={styles.content}
@@ -562,7 +632,7 @@ const UKQuizScreen = () => {
             title={currentQuestionIndex === quizQuestions.length - 1 ? "Finish" : "Next"}
             onPress={handleNext}
             variant="primary"
-            disabled={mode !== 'mock' ? !showExplanation : !isAnswerSelected}
+            disabled={mode !== 'mock' ? !showExplanation : false}
             style={styles.navButton}
           />
         </View>
@@ -692,6 +762,73 @@ const styles = StyleSheet.create({
   },
   finishButton: {
     minWidth: 200,
+  },
+  // Question Overview Panel styles
+  questionOverviewPanel: {
+    margin: 15,
+    padding: 15,
+    borderRadius: 15,
+    borderWidth: 1,
+    shadowColor: '#8b5cf6',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  overviewTitle: {
+    fontSize: 14,
+    fontWeight: '600',
+    marginBottom: 10,
+    textAlign: 'center',
+    letterSpacing: 1,
+  },
+  overviewHint: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  questionNumbers: {
+    marginBottom: 10,
+  },
+  questionNumbersContent: {
+    paddingHorizontal: 5,
+  },
+  questionNumber: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginHorizontal: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+  },
+  questionNumberText: {
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  legendContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  legendItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  legendDot: {
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 4,
+  },
+  legendText: {
+    fontSize: 10,
+    fontWeight: '500',
   },
   // Results styles
   resultsHeader: {
