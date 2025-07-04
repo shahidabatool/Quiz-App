@@ -665,21 +665,82 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
           </Text>
         </View>
 
-        {/* Progress Bar */}
-        <View style={[
-          styles.progressContainer,
-          { backgroundColor: theme.colors.backgroundSecondary }
-        ]}>
-          <Animated.View
-            style={[
-              styles.progressBar,
-              {
-                backgroundColor: theme.colors.neonBlue,
-              },
-              progressStyle,
-            ]}
-          />
-        </View>
+        {/* Progress Bar - Hidden for Mock Tests */}
+        {!isMockTest && (
+          <View style={[
+            styles.progressContainer,
+            { backgroundColor: theme.colors.backgroundSecondary }
+          ]}>
+            <Animated.View
+              style={[
+                styles.progressBar,
+                {
+                  backgroundColor: theme.colors.neonBlue,
+                },
+                progressStyle,
+              ]}
+            />
+          </View>
+        )}
+
+        {/* Question Overview Panel - For Mock Tests Only */}
+        {isMockTest && (
+          <View style={styles.questionOverviewInHeader}>
+            <Text style={[styles.overviewTitleInHeader, { color: theme.colors.text }]}>Question Overview</Text>
+            <ScrollView 
+              horizontal 
+              showsHorizontalScrollIndicator={false}
+              style={styles.questionNumbersInHeader}
+              contentContainerStyle={styles.questionNumbersContent}
+            >
+              {questions.map((_, index) => {
+                const isAnswered = selectedAnswers[index] !== undefined && selectedAnswers[index] !== '';
+                const isCurrent = index === currentQuestionIndex;
+                
+                return (
+                  <TouchableOpacity
+                    key={index}
+                    style={[
+                      styles.questionNumberButton,
+                      { backgroundColor: theme.colors.backgroundSecondary },
+                      isAnswered && { backgroundColor: theme.colors.neonBlue },
+                      isCurrent && { 
+                        backgroundColor: theme.colors.neonPurple,
+                        borderColor: theme.colors.neonGreen,
+                        borderWidth: 2
+                      },
+                    ]}
+                    onPress={() => {
+                      setCurrentQuestionIndex(index);
+                    }}
+                  >
+                    <Text style={[
+                      styles.questionNumberText,
+                      { color: theme.colors.text },
+                      (isAnswered || isCurrent) && { color: '#fff' }
+                    ]}>
+                      {index + 1}
+                    </Text>
+                  </TouchableOpacity>
+                );
+              })}
+            </ScrollView>
+            <View style={styles.legendContainerInHeader}>
+              <View style={styles.legendItem}>
+                <View style={[styles.legendDot, { backgroundColor: theme.colors.neonBlue }]} />
+                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Answered</Text>
+              </View>
+              <View style={styles.legendItem}>
+                <View style={[styles.legendDot, { backgroundColor: theme.colors.neonPurple, borderColor: theme.colors.neonGreen, borderWidth: 2 }]} />
+                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Current</Text>
+              </View>
+              <View style={styles.legendItem}>
+                <View style={[styles.legendDot, { backgroundColor: theme.colors.backgroundSecondary }]} />
+                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Not answered</Text>
+              </View>
+            </View>
+          </View>
+        )}
 
         {/* Timer for Canada quiz and mock test, and other mock tests */}
         {(isMockTest || (country === 'canada' && mode === 'quiz')) && (
@@ -699,67 +760,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
         )}
       </Animated.View>
 
-      {/* Question Overview Panel - Only for Mock Tests */}
-      {isMockTest && (
-        <View style={[styles.questionOverviewPanel, { backgroundColor: theme.colors.card, borderColor: theme.colors.neonBlue }]}>
-          <Text style={[styles.overviewTitle, { color: theme.colors.text }]}>Question Overview</Text>
-          <Text style={[styles.overviewHint, { color: theme.colors.textSecondary }]}>
-            💡 Tap any question number to jump to it and change your answer
-          </Text>
-          <ScrollView 
-            horizontal 
-            showsHorizontalScrollIndicator={false}
-            style={styles.questionNumbers}
-            contentContainerStyle={styles.questionNumbersContent}
-          >
-            {questions.map((_, index) => {
-              const isAnswered = selectedAnswers[index] !== undefined && selectedAnswers[index] !== '';
-              const isCurrent = index === currentQuestionIndex;
-              
-              return (
-                <TouchableOpacity
-                  key={index}
-                  style={[
-                    styles.questionNumberButton,
-                    { backgroundColor: theme.colors.backgroundSecondary },
-                    isAnswered && { backgroundColor: theme.colors.neonBlue },
-                    isCurrent && { 
-                      backgroundColor: theme.colors.neonPurple,
-                      borderColor: theme.colors.neonGreen,
-                      borderWidth: 2
-                    },
-                  ]}
-                  onPress={() => {
-                    setCurrentQuestionIndex(index);
-                  }}
-                >
-                  <Text style={[
-                    styles.questionNumberText,
-                    { color: theme.colors.text },
-                    (isAnswered || isCurrent) && { color: '#fff' }
-                  ]}>
-                    {index + 1}
-                  </Text>
-                </TouchableOpacity>
-              );
-            })}
-          </ScrollView>
-          <View style={styles.legendContainer}>
-            <View style={styles.legendItem}>
-              <View style={[styles.legendDot, { backgroundColor: theme.colors.neonBlue }]} />
-              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Answered</Text>
-            </View>
-            <View style={styles.legendItem}>
-              <View style={[styles.legendDot, { backgroundColor: theme.colors.neonPurple, borderColor: theme.colors.neonGreen, borderWidth: 2 }]} />
-              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Current</Text>
-            </View>
-            <View style={styles.legendItem}>
-              <View style={[styles.legendDot, { backgroundColor: theme.colors.backgroundSecondary }]} />
-              <Text style={[styles.legendText, { color: theme.colors.textSecondary }]}>Not answered</Text>
-            </View>
-          </View>
-        </View>
-      )}
+
 
       {/* Question Content */}
       <ScrollView
@@ -997,55 +998,41 @@ const styles = StyleSheet.create({
   finishButton: {
     minWidth: 200,
   },
-  // Question Overview Panel styles
-  questionOverviewPanel: {
-    margin: 15,
-    padding: 15,
-    borderRadius: 15,
-    borderWidth: 1,
-    shadowColor: '#8b5cf6',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 8,
-    elevation: 5,
+  // Question Overview Panel in Header styles
+  questionOverviewInHeader: {
+    marginBottom: 15,
   },
-  overviewTitle: {
-    fontSize: 14,
+  overviewTitleInHeader: {
+    fontSize: 12,
     fontWeight: '600',
-    marginBottom: 10,
+    marginBottom: 8,
     textAlign: 'center',
     letterSpacing: 1,
   },
-  overviewHint: {
-    fontSize: 12,
-    fontStyle: 'italic',
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  questionNumbers: {
-    marginBottom: 10,
+  questionNumbersInHeader: {
+    marginBottom: 8,
   },
   questionNumbersContent: {
     paddingHorizontal: 5,
   },
   questionNumberButton: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 32,
+    height: 32,
+    borderRadius: 16,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 3,
+    marginHorizontal: 2,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    shadowRadius: 2,
+    elevation: 2,
   },
   questionNumberText: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '700',
   },
-  legendContainer: {
+  legendContainerInHeader: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -1055,13 +1042,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   legendDot: {
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    marginRight: 4,
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    marginRight: 3,
   },
-  legendText: {
-    fontSize: 10,
+  legendTextInHeader: {
+    fontSize: 8,
     fontWeight: '500',
   },
   // Results styles
