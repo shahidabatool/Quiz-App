@@ -453,66 +453,7 @@ const UKQuizScreen = () => {
           </View>
         )}
 
-        {/* Question Overview Panel - For Mock Tests Only */}
-        {mode === 'mock' && (
-          <View style={styles.questionOverviewInHeader}>
-            <Text style={[styles.overviewTitleInHeader, { color: theme.colors.text }]}>Question Overview</Text>
-            <ScrollView 
-              horizontal 
-              showsHorizontalScrollIndicator={false}
-              style={styles.questionNumbersInHeader}
-              contentContainerStyle={styles.questionNumbersContent}
-            >
-              {quizQuestions.map((_, index) => {
-                const isAnswered = userAnswers[index] !== undefined && userAnswers[index] !== '';
-                const isCurrent = index === currentQuestionIndex;
-                
-                return (
-                  <TouchableOpacity
-                    key={index}
-                    style={[
-                      styles.questionNumber,
-                      { backgroundColor: theme.colors.backgroundSecondary },
-                      isAnswered && { backgroundColor: theme.colors.neonBlue },
-                      isCurrent && { 
-                        backgroundColor: theme.colors.neonPurple,
-                        borderColor: theme.colors.neonGreen,
-                        borderWidth: 2
-                      },
-                    ]}
-                    onPress={() => {
-                      setCurrentQuestionIndex(index);
-                      setSelectedAnswer(userAnswers[index] || null);
-                      setShowExplanation(false);
-                    }}
-                  >
-                    <Text style={[
-                      styles.questionNumberText,
-                      { color: theme.colors.text },
-                      (isAnswered || isCurrent) && { color: '#fff' }
-                    ]}>
-                      {index + 1}
-                    </Text>
-                  </TouchableOpacity>
-                );
-              })}
-            </ScrollView>
-            <View style={styles.legendContainerInHeader}>
-              <View style={styles.legendItem}>
-                <View style={[styles.legendDot, { backgroundColor: theme.colors.neonBlue }]} />
-                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Answered</Text>
-              </View>
-              <View style={styles.legendItem}>
-                <View style={[styles.legendDot, { backgroundColor: theme.colors.neonPurple, borderColor: theme.colors.neonGreen, borderWidth: 2 }]} />
-                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Current</Text>
-              </View>
-              <View style={styles.legendItem}>
-                <View style={[styles.legendDot, { backgroundColor: theme.colors.backgroundSecondary }]} />
-                <Text style={[styles.legendTextInHeader, { color: theme.colors.textSecondary }]}>Not answered</Text>
-              </View>
-            </View>
-          </View>
-        )}
+
 
         {/* Timer for mock and quiz modes */}
         {(mode === 'mock' || mode === 'quiz') && (
@@ -764,59 +705,7 @@ const styles = StyleSheet.create({
   finishButton: {
     minWidth: 200,
   },
-  // Question Overview Panel in Header styles
-  questionOverviewInHeader: {
-    marginBottom: 15,
-  },
-  overviewTitleInHeader: {
-    fontSize: 12,
-    fontWeight: '600',
-    marginBottom: 8,
-    textAlign: 'center',
-    letterSpacing: 1,
-  },
-  questionNumbersInHeader: {
-    marginBottom: 8,
-  },
-  questionNumbersContent: {
-    paddingHorizontal: 5,
-  },
-  questionNumber: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginHorizontal: 2,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  questionNumberText: {
-    fontSize: 12,
-    fontWeight: '700',
-  },
-  legendContainerInHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-  legendItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  legendDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    marginRight: 3,
-  },
-  legendTextInHeader: {
-    fontSize: 8,
-    fontWeight: '500',
-  },
+
   // Results styles
   resultsHeader: {
     padding: 25,
