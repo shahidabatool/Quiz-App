@@ -15,6 +15,7 @@ import { useTheme } from '../theme/ThemeContext';
 import { lightTheme, darkTheme } from '../theme/theme';
 import FuturisticButton from '../components/FuturisticButton';
 import questions from '../../assets/uk_questions_extended.json';
+import { useAdMob } from '../hooks/useAdMob';
 
 const { width, height } = Dimensions.get('window');
 
@@ -28,6 +29,7 @@ const UKQuizScreen = () => {
 
   const { isDark } = useTheme();
   const theme = isDark ? darkTheme : lightTheme;
+  const { showInterstitialAd, isAdReady, setProduction } = useAdMob();
 
   const [loading, setLoading] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -41,6 +43,24 @@ const UKQuizScreen = () => {
   // Timer states
   const [timeLeft, setTimeLeft] = useState(45 * 60); // 45 minutes in seconds
   const [timerActive, setTimerActive] = useState(false);
+
+  // Set production mode for AdMob (set to true for production)
+  useEffect(() => {
+    setProduction(false); // Set to true for production build
+  }, [setProduction]);
+
+  // Helper function to show interstitial ad with delay
+  const showAdWithDelay = async () => {
+    if (isAdReady) {
+      try {
+        await showInterstitialAd();
+        // Small delay to ensure ad completes before navigation
+        await new Promise(resolve => setTimeout(resolve, 500));
+      } catch (error) {
+        console.log('Failed to show interstitial ad:', error);
+      }
+    }
+  };
 
   // Animation values
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -268,7 +288,10 @@ const UKQuizScreen = () => {
     }
   };
 
-  const handleFinish = () => {
+  const handleFinish = async () => {
+    // Show interstitial ad before navigating to results
+    await showAdWithDelay();
+    
     navigation.navigate('Results', {
       score,
       totalQuestions: quizQuestions.length,

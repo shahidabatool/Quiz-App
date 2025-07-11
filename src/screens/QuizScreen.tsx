@@ -15,6 +15,7 @@ import { lightTheme, darkTheme } from '../theme/theme';
 import FuturisticButton from '../components/FuturisticButton';
 import { loadCanadaQuestions, getRandomQuestions } from '../utils/questionUtils';
 import { ukQuestions, getRandomUKQuestions } from '../data/uk-questions';
+import { useAdMob } from '../hooks/useAdMob';
 
 
 
@@ -68,6 +69,7 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
   const { country = 'canada', mode, chapterName, moduleTitle } = route.params;
   const { isDark } = useTheme();
   const theme = isDark ? darkTheme : lightTheme;
+  const { showInterstitialAd, isAdReady, setProduction } = useAdMob();
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -184,6 +186,24 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
   const pulseAnim = useRef(new Animated.Value(1)).current;
   const glowAnim = useRef(new Animated.Value(0)).current;
   const progressAnim = useRef(new Animated.Value(0)).current;
+
+  // Set production mode for AdMob (set to true for production)
+  useEffect(() => {
+    setProduction(false); // Set to true for production build
+  }, [setProduction]);
+
+  // Helper function to show interstitial ad with delay
+  const showAdWithDelay = async () => {
+    if (isAdReady) {
+      try {
+        await showInterstitialAd();
+        // Small delay to ensure ad completes before navigation
+        await new Promise(resolve => setTimeout(resolve, 500));
+      } catch (error) {
+        console.log('Failed to show interstitial ad:', error);
+      }
+    }
+  };
 
   // Entrance animations
   useEffect(() => {
@@ -337,8 +357,12 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
     }
   };
 
-  const handleFinishQuiz = () => {
+  const handleFinishQuiz = async () => {
     setIsTimerRunning(false);
+    
+    // Show interstitial ad before showing results
+    await showAdWithDelay();
+    
     setShowResults(true);
   };
 
@@ -626,7 +650,11 @@ const QuizScreen: React.FC<QuizScreenProps> = ({ navigation, route }) => {
             />
             <FuturisticButton
               title="Back to Home"
-              onPress={() => navigation.navigate('Home')}
+              onPress={async () => {
+                // Show interstitial ad before navigating to home
+                await showAdWithDelay();
+                navigation.navigate('Home');
+              }}
               variant="primary"
               style={styles.actionButton}
             />

@@ -13,6 +13,7 @@ import { lightTheme, darkTheme } from '../theme/theme';
 import DarkModeToggle from '../components/DarkModeToggle';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation';
+import { useAdMob } from '../hooks/useAdMob';
 
 type HomeScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 
@@ -23,10 +24,29 @@ interface Props {
 const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const { isDark } = useTheme();
   const theme = isDark ? darkTheme : lightTheme;
+  const { showInterstitialAd, isAdReady, setProduction } = useAdMob();
 
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0.8)).current;
   const rotateAnim = useRef(new Animated.Value(0)).current;
+
+  // Set production mode for AdMob (set to true for production)
+  useEffect(() => {
+    setProduction(false); // Set to true for production build
+  }, [setProduction]);
+
+  // Helper function to show interstitial ad with delay
+  const showAdWithDelay = async () => {
+    if (isAdReady) {
+      try {
+        await showInterstitialAd();
+        // Small delay to ensure ad completes before navigation
+        await new Promise(resolve => setTimeout(resolve, 500));
+      } catch (error) {
+        console.log('Failed to show interstitial ad:', error);
+      }
+    }
+  };
 
   useEffect(() => {
     // Simple entrance animation
@@ -66,18 +86,24 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
   };
 
   // SIMPLE NAVIGATION FUNCTIONS
-  const goToCanada = () => {
+  const goToCanada = async () => {
     console.log('🇨🇦 Going to Canada!');
+    // Show interstitial ad before navigating to Canada section
+    await showAdWithDelay();
     navigation.navigate('CanadianModules');
   };
 
-  const goToUK = () => {
+  const goToUK = async () => {
     console.log('🇬🇧 Going to UK!');
+    // Show interstitial ad before navigating to UK section
+    await showAdWithDelay();
     navigation.navigate('UKCitizenship');
   };
 
-  const goToAboutUs = () => {
+  const goToAboutUs = async () => {
     console.log('👥 Going to About Us!');
+    // Show interstitial ad before navigating to About Us
+    await showAdWithDelay();
     // HACK: Use working Canada navigation but with About Us flag
     navigation.navigate('CanadianModules', { showAboutUs: true });
   };

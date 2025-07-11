@@ -11,17 +11,32 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-9953142465857958~2804847418"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-9953142465857958~2804847418"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "webpack"
-    }
+    },
+    "plugins": [
+      [
+        "expo-ads-admob",
+        {
+          "androidAppId": "ca-app-pub-9953142465857958~2804847418",
+          "iosAppId": "ca-app-pub-9953142465857958~2804847418"
+        }
+      ]
+    ]
   }
 }
